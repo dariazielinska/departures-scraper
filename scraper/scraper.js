@@ -230,7 +230,8 @@ const scrapeData = async (url) => {
 };
 
 const saveCSV = (csvContent, airportCode) => {
-    const filename = `tabela_odlotow_${airportCode}_${new Date().toISOString()}.csv`;
+    const folderPath = 'scraper_output/';
+    const filename = `${folderPath}tabela_odlotow_${airportCode}_${new Date().toISOString()}.csv`;
     fs.writeFileSync(filename, csvContent);
     console.log(`Plik zapisany jako: ${filename}`);
 };
