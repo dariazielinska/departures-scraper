@@ -244,14 +244,19 @@ const runScraper = async (url) => {
     }
 };
 
-runScraper('https://www.airport.gdansk.pl/loty/tablica-odlotow-p2.html');
-runScraper('https://www.airport.wroclaw.pl/pasazer/odlatuje/sprawdz-status-lotu/');
-runScraper('https://www.katowice-airport.com/');
-runScraper('https://www.krakowairport.pl/pl/pasazer/loty/odloty');
-runScraper('https://www.modlinairport.pl/pasazer/rozklad-lotow');
-runScraper('https://plb.pl/');
-runScraper('https://airport.com.pl/');
-runScraper('https://www.rzeszowairport.pl/pl/pasazer/loty');
+(async () => {
+    await Promise.all([
+        runScraper('https://www.airport.gdansk.pl/loty/tablica-odlotow-p2.html'),
+        runScraper('https://www.airport.wroclaw.pl/pasazer/odlatuje/sprawdz-status-lotu/'),
+        runScraper('https://www.katowice-airport.com/'),
+        runScraper('https://www.krakowairport.pl/pl/pasazer/loty/odloty'),
+        runScraper('https://www.modlinairport.pl/pasazer/rozklad-lotow'),
+        runScraper('https://plb.pl/'),
+        runScraper('https://airport.com.pl/'),
+        runScraper('https://www.rzeszowairport.pl/pl/pasazer/loty')
+    ]);
+    process.exit(0);
+})();
 
 // Nie działające: 
 // runScraper('https://www.lotnisko-chopina.pl/pl/odloty.html')
