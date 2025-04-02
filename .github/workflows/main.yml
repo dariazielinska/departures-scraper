@@ -2,8 +2,11 @@ name: Run Scraper
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Uruchamianie co godzinę
-  workflow_dispatch:  # Pozwala uruchomić ręcznie z poziomu GitHuba
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   scrape:
@@ -24,9 +27,11 @@ jobs:
         run: cd scraper && node scraper.js
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add .
           git commit -m "Automated data update [$(date)]" || echo "No changes to commit"
-          git push
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
