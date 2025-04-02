@@ -1,0 +1,24 @@
+name: Run Scraper
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Uruchamianie co godzinę
+  workflow_dispatch:  # Pozwala uruchomić ręcznie z poziomu GitHuba
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Puppeteer script
+        run: node scraper.js
