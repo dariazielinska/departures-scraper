@@ -21,4 +21,4 @@ jobs:
         run: npm install
 
       - name: Run Puppeteer script
-        run: node scraper.js
+        run: cd scraper && node scraper.js
