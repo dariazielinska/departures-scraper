@@ -209,7 +209,7 @@ const scrapeData = async (url) => {
     await page.goto(url, { waitUntil: 'networkidle2' });
     await new Promise(resolve => setTimeout(resolve, 5000));
 
-    await page.screenshot({ path: 'lotnisko_screenshot.png' });
+    //await page.screenshot({ path: 'lotnisko_screenshot.png' });
 
     const selectedScraper = Object.keys(scrapers).find(key => url.includes(key));
     if (!selectedScraper) throw new Error("Nie obsługujemy tego lotniska.");
@@ -234,7 +234,7 @@ const saveCSV = (csvContent, airportCode) => {
         .replace(/:/g, "-")
         .replace(/\./g, "_"); 
     const folderPath = 'scraper_output/';
-    const fileName = `${folderPath}tabela_odlotow_GDN_${timestamp}.csv`;
+    const fileName = `${folderPath}tabela_odlotow_${airportCode}_${timestamp}.csv`;
     fs.writeFileSync(fileName, csvContent);
     console.log(`Plik zapisany jako: ${fileName}`);
 };
