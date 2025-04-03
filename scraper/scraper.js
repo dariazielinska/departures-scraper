@@ -230,10 +230,13 @@ const scrapeData = async (url) => {
 };
 
 const saveCSV = (csvContent, airportCode) => {
+    const timestamp = new Date().toISOString()
+        .replace(/:/g, "-")
+        .replace(/\./g, "_"); 
     const folderPath = 'scraper_output/';
-    const filename = `${folderPath}tabela_odlotow_${airportCode}_${new Date().toISOString()}.csv`;
-    fs.writeFileSync(filename, csvContent);
-    console.log(`Plik zapisany jako: ${filename}`);
+    const fileName = `${folderPath}tabela_odlotow_GDN_${timestamp}.csv`;
+    fs.writeFileSync(fileName, csvContent);
+    console.log(`Plik zapisany jako: ${fileName}`);
 };
 
 const runScraper = async (url) => {
