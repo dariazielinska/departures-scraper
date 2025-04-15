@@ -328,10 +328,9 @@ function appendNewData(existingRows, newRows) {
             }
         } else {
             changes.push(`➕ NOWY wpis: ${row}`);
+            updatedData.push(row);
+            seen.add(key);
         }
-
-        updatedData.push(row);
-        seen.add(key);
     }
 
     return { updatedData, changes };
