@@ -279,14 +279,70 @@ const scrapeData = async (url) => {
 };
 
 const saveCSV = (csvContent, airportCode) => {
-    const timestamp = new Date().toISOString()
-        .replace(/:/g, "-")
-        .replace(/\./g, "_"); 
     const folderPath = 'scraper_output/';
-    const fileName = `${folderPath}tabela_odlotow_${airportCode}_${timestamp}.csv`;
-    fs.writeFileSync(fileName, csvContent);
-    console.log(`Plik zapisany jako: ${fileName}`);
+    const fileName = `${folderPath}tabela_odlotow_${airportCode}.csv`;
+
+    const newLines = csvContent.trim().split('\n');
+    const header = newLines[0];
+    const newData = newLines.slice(1);
+
+    let existingData = [];
+    if (fs.existsSync(fileName)) {
+        const fileContent = fs.readFileSync(fileName, 'utf8');
+        existingData = fileContent.trim().split('\n').slice(1);
+    }
+
+    const { updatedData, changes } = appendNewData(existingData, newData);
+
+    const finalContent = [header, ...updatedData].join('\n');
+    fs.writeFileSync(fileName, finalContent);
+    console.log(`Zaktualizowano plik: ${fileName}`);
+
+    if (changes.length > 0) {
+        console.log('\n Wykryto zmiany:\n');
+        changes.forEach(change => console.log(change));
+    } else {
+        console.log('\nBrak nowych danych lub zmian w godzinach.');
+    }
 };
+
+function appendNewData(existingRows, newRows) {
+    const seen = new Set(existingRows.map(row => row.split(';').slice(0, 5).join(';')));
+    const updatedData = [...existingRows];
+    const changes = [];
+
+    for (const row of newRows) {
+        const parts = row.split(';');
+        const key = parts.slice(0, 5).join(';');
+        const existingMatch = existingRows.find(r => r.includes(parts[4]) && r.startsWith(parts[0]));
+
+        if (seen.has(key)) continue;
+
+        if (existingMatch) {
+            const oldTime = existingMatch.split(';')[1];
+            const newTime = parts[1];
+            const diff = timeDiffMinutes(oldTime, newTime);
+
+            if (oldTime !== newTime) {
+                changes.push(`✈️ ZMIANA: ${parts[4]} dnia ${parts[0]} – ${oldTime} → ${newTime} (${diff} min)`);
+            }
+        } else {
+            changes.push(`➕ NOWY wpis: ${row}`);
+        }
+
+        updatedData.push(row);
+        seen.add(key);
+    }
+
+    return { updatedData, changes };
+}
+
+function timeDiffMinutes(t1, t2) {
+    const [h1, m1] = t1.split(':').map(Number);
+    const [h2, m2] = t2.split(':').map(Number);
+    return (h2 * 60 + m2) - (h1 * 60 + m1);
+}
+
 
 const runScraper = async (url) => {
     try {
