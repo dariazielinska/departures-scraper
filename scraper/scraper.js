@@ -6,42 +6,93 @@ puppeteer.use(stealthPlugin());
 
 const scrapGDN = () => {
     const rows = document.querySelectorAll(".table__body .table__element");
-    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
+
     rows.forEach(row => {
         const time = row.querySelector(".table__time:not(.table__time_expected)").textContent;
+        const [hour, minute] = time.split(':').map(Number);
+        const currentHour = hour;
+
+        if (currentHour < lastHour) {
+            dayOffset += 1;
+        }
+
+        const flightDate = new Date(startDate);
+        flightDate.setDate(flightDate.getDate() + dayOffset);
+        const formattedDate = flightDate.toISOString().split('T')[0];
+
+        lastHour = currentHour;
         const airport = row.querySelector(".table__airport").textContent;
         const company = row.querySelector(".table__company").textContent;
         const flight = row.querySelector(".table__flight").textContent;
-        csv.push(`${time};${airport};${company};${flight};;"GDN"`);
+        csv.push(`${formattedDate};${time};${airport};${company};${flight};;"GDN"`);
     });
     return csv.join("\n");
 };
 
 const scrapWRO = () => {
     const rows = document.querySelectorAll(".n-flights__data.desktop.n-flights__departures");
-    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
+    
     rows.forEach(row => {
         const time = row.querySelector(".time")?.textContent || "Brak danych";
+
+        const [hour, minute] = time.split(':').map(Number);
+        const currentHour = hour;
+
+        if (currentHour < lastHour) {
+            dayOffset += 1;
+        }
+
+        const flightDate = new Date(startDate);
+        flightDate.setDate(flightDate.getDate() + dayOffset);
+        const formattedDate = flightDate.toISOString().split('T')[0];
+        lastHour = currentHour;
+
         const airport = row.querySelector(".direction__name")?.textContent.trim() || "Brak danych";
         const companyImg = row.querySelector("img");
         const company = companyImg ? companyImg.getAttribute("alt") : " ";
         const flight = row.querySelector(".direction__number")?.textContent.trim() || "Brak danych";
-        csv.push(`${time};${airport};${company};${flight};;"WRO"`);
+        csv.push(`${formattedDate};${time};${airport};${company};${flight};;"WRO"`);
     });
     return csv.join("\n");
 };
 
 function scrapKTW() {
     const rows = document.querySelectorAll(".timetable__row.flight-board__row");
-    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
     rows.forEach(row => {
         const time = row.querySelector(".timetable__col.flight-board__col--1").textContent;
+
+        const [hour, minute] = time.split(':').map(Number);
+        const currentHour = hour;
+
+        if (currentHour < lastHour) {
+            dayOffset += 1;
+        }
+
+        const flightDate = new Date(startDate);
+        flightDate.setDate(flightDate.getDate() + dayOffset);
+        const formattedDate = flightDate.toISOString().split('T')[0];
+        lastHour = currentHour;
+
         const airport = row.querySelector(".timetable__col.flight-board__col--2").textContent;
         const companyImg = row.querySelector("img");
         const company = companyImg ? companyImg.getAttribute("alt") : " ";
         const flight = row.querySelector(".timetable__col.flight-board__col--4").textContent;
         const csvRow = [];
-        csvRow.push(`${time};${airport};${company};${flight};;"KTW"`);
+        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"KTW"`);
         csv.push(csvRow.join("\n"));
     });
     return csv.join("\n");
@@ -49,14 +100,29 @@ function scrapKTW() {
 
 function scrapKRK() {
     const rows = document.querySelectorAll(".table-responsive.table-departures-arrivals table.table tbody tr");
-    const csv = ['Czas;Kierunek;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Rejs;;Lotnisko wylotowe'];
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
     rows.forEach(row => {
         const time = row.querySelector("th").textContent.trim();
+        const [hour, minute] = time.split(':').map(Number);
+        const currentHour = hour;
+
+        if (currentHour < lastHour) {
+            dayOffset += 1;
+        }
+
+        const flightDate = new Date(startDate);
+        flightDate.setDate(flightDate.getDate() + dayOffset);
+        const formattedDate = flightDate.toISOString().split('T')[0];
+        lastHour = currentHour;
+
         const tds = row.querySelectorAll("td");
         const airport = tds[0].textContent.trim();
         const flight = tds[1].textContent.trim();
         const csvRow = [];
-        csvRow.push(`${time};${airport};${flight};;"KRK"`);
+        csvRow.push(`${formattedDate};${time};${airport};${flight};;"KRK"`);
         csv.push(csvRow.join("\n"));
     });
     return csv.join("\n");
@@ -64,115 +130,98 @@ function scrapKRK() {
 
 function scrapWMI() {
     const rows = document.querySelectorAll("table.departures-table tbody tr");
-    const csv = ['Czas;Kierunek;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Rejs;;Lotnisko wylotowe'];
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
     rows.forEach(row => {
         const tds = row.querySelectorAll("td");
         if (tds.length > 0) {
             const time = tds[2].textContent.trim();
+            const [hour, minute] = time.split(':').map(Number);
+            const currentHour = hour;
+    
+            if (currentHour < lastHour) {
+                dayOffset += 1;
+            }
+    
+            const flightDate = new Date(startDate);
+            flightDate.setDate(flightDate.getDate() + dayOffset);
+            const formattedDate = flightDate.toISOString().split('T')[0];
+            lastHour = currentHour;
+
             const airport = tds[1].textContent.trim();
             const flight = tds[0].textContent.trim();
             const csvRow = [];
-            csvRow.push(`${time};${airport};${flight};;"WMI"`);
+            csvRow.push(`${formattedDate};${time};${airport};${flight};;"WMI"`);
             csv.push(csvRow.join("\n"));
         }
-    });
-    return csv.join("\n");
-}
-
-function scrapBZG() {
-    const table = document.querySelector('#departures').childNodes[1].childNodes[3]
-    const rows = table.querySelectorAll('tr');
-    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
-    rows.forEach(row => {
-        const tds = row.querySelectorAll("td");
-            const time = tds[0].childNodes[0]?.textContent.trim();
-            const airport = tds[2].childNodes[0].textContent.trim();
-            const flight = tds[1].childNodes[0].textContent.trim();
-            const csvRow = [];
-            csvRow.push(`${time};${airport};;${flight};;BZG`);
-            csv.push(csvRow.join("\n"));
     });
     return csv.join("\n");
 }
 
 function scrapSSZ() {
     const rows = document.querySelectorAll("#departuresInfo tr");
-    const csv = ['Czas;Kierunek;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Rejs;;Lotnisko wylotowe'];
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
     rows.forEach(row => {
         const tds = row.querySelectorAll("td")
         const time = tds[0]?.textContent;
+
+        if (!time || !time.includes(':')) return;
+
+        const [hour, minute] = time.split(':').map(Number);
+        const currentHour = hour;
+
+        if (currentHour < lastHour) {
+            dayOffset += 1;
+        }
+
+        const flightDate = new Date(startDate);
+        flightDate.setDate(flightDate.getDate() + dayOffset);
+        const formattedDate = flightDate.toISOString().split('T')[0];
+        lastHour = currentHour;
+
         const airport = tds[2]?.textContent;
         const flight = tds[1]?.textContent;
         const csvRow = [];
-        csvRow.push(`${time};${airport};${flight};;"SSZ"`);
+        csvRow.push(`${formattedDate};${time};${airport};${flight};;"SSZ"`);
         csv.push(csvRow.join("\n"));
     });
-    csv.splice(1, 1);
     return csv.join("\n");
 }
 
 function scrapRZE() {
     const rows = document.querySelectorAll(".table-responsive.timetable-departures tr");
-    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
     rows.forEach(row => {
         const tds = row.querySelectorAll("td")
         if(tds[1]) {
             const time = tds[1].textContent;
+
+            const [hour, minute] = time.split(':').map(Number);
+            const currentHour = hour;
+    
+            if (currentHour < lastHour) {
+                dayOffset += 1;
+            }
+    
+            const flightDate = new Date(startDate);
+            flightDate.setDate(flightDate.getDate() + dayOffset);
+            const formattedDate = flightDate.toISOString().split('T')[0];
+            lastHour = currentHour;
+
             const airport = tds[2].textContent;
             const companyImg = tds[0].querySelector("img");
             const company = companyImg ? companyImg.getAttribute("alt") : (tds[0].textContent ? tds[0].textContent.trim() : " ");
             const flight = tds[3].textContent;
             const csvRow = [];
-            csvRow.push(`${time};${airport};${company};${flight};;"RZE"`);
-            csv.push(csvRow.join("\n"));
-        }
-    });
-    return csv.join("\n");
-}
-
-function scrapRDO() {
-    const buttonsContainer = document.querySelector(".f-table__buttons-container");
-    if (buttonsContainer) {
-        const button = buttonsContainer.querySelectorAll("div")[1];
-        if (button) {
-            button.click();
-        } 
-    } 
-
-    const start = Date.now();
-    while (Date.now() - start < 2000) {}
-
-    const rows = document.querySelectorAll(".f-table-container__content");
-    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
-    rows.forEach(row => {
-        const time = row.querySelector(".col.f-time").textContent.trim();
-        const airport = row.querySelector(".f-direction__origin").textContent.trim();
-        const companyImg = row.querySelector("img");
-        const company = companyImg?.getAttribute("src")?.includes("lot-logo")
-        ? "LOT"
-        : companyImg?.getAttribute("src")?.includes("wizz")
-        ? "WIZZAIR"
-        : " ";
-        const flight = row.querySelector(".f-direction__number").textContent.trim();
-        const csvRow = [];
-        csvRow.push(`${time};${airport};${company};${flight};;"RDO"`);
-        csv.push(csvRow.join("\n"));
-    });
-    return csv.join("\n");
-}
-
-function scrapFlightRadar() {
-    const rows = document.querySelectorAll("tr");
-    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
-    rows.forEach(row => {
-        const tds = row.querySelectorAll("td")
-        if(tds[1]) {
-            const time = tds[0].textContent;
-            const airport = tds[2].textContent;
-            const company = tds[3].textContent;
-            const flight = tds[1].textContent;
-            const csvRow = [];
-            csvRow.push(`${time};${airport};${company};${flight};;${scrapers[selectedScraper].name}`);
+            csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"RZE"`);
             csv.push(csvRow.join("\n"));
         }
     });
@@ -187,7 +236,7 @@ const scrapers = {
     //"poznanairport.pl": { scrapeFunction: scrapPOZ, name: "POZ" },
     "krakowairport.pl": { scrapeFunction: scrapKRK, name: "KRK" },
     "modlinairport.pl": { scrapeFunction: scrapWMI, name: "WMI" },
-    "plb.pl": { scrapeFunction: scrapBZG, name: "BZG" },
+    //"plb.pl": { scrapeFunction: scrapBZG, name: "BZG" },
     "airport.com.pl": { scrapeFunction: scrapSSZ, name: "SSZ" },
     "rzeszowairport.pl": { scrapeFunction: scrapRZE, name: "RZE" },
     //"lotniskowarszawa-radom.pl": { scrapeFunction: scrapRDO, name: "RDO" }
@@ -255,7 +304,6 @@ const runScraper = async (url) => {
         runScraper('https://www.katowice-airport.com/'),
         runScraper('https://www.krakowairport.pl/pl/pasazer/loty/odloty'),
         runScraper('https://www.modlinairport.pl/pasazer/rozklad-lotow'),
-        runScraper('https://plb.pl/'),
         runScraper('https://airport.com.pl/'),
         runScraper('https://www.rzeszowairport.pl/pl/pasazer/loty')
     ]);
@@ -263,6 +311,7 @@ const runScraper = async (url) => {
 })();
 
 // Nie działające: 
+// runScraper('https://plb.pl/')
 // runScraper('https://www.lotnisko-chopina.pl/pl/odloty.html')
 // runScraper('https://poznanairport.pl/');
 // runScraper('https://www.lotniskowarszawa-radom.pl/loty/przyloty-i-odloty?flight_type=arrivals&flight=')
