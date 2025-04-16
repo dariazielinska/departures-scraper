@@ -333,6 +333,12 @@ function appendNewData(existingRows, newRows) {
         }
     }
 
+    updatedData.sort((a, b) => {
+        const [dateA, timeA] = a.split(';');
+        const [dateB, timeB] = b.split(';');
+        return new Date(`${dateA}T${timeA}`) - new Date(`${dateB}T${timeB}`);
+    });
+
     return { updatedData, changes };
 }
 
