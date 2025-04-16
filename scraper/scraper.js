@@ -315,6 +315,26 @@ function scrapRDO() {
     return csv.join("\n");
 }
 
+function scrapPOZ() {
+    const rows = document.querySelectorAll(".boardArchive__itemColumns");
+    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    rows.forEach(row => {
+        const timeContainer = row.querySelector(".boardArchive__itemColumn.boardArchive__itemColumn--time");
+        const timeNode = timeContainer.querySelector("div").childNodes[1];
+        const time = timeNode ? timeNode.textContent.trim() : '-';
+        const airport = row.querySelector(".boardArchive__itemColumn.boardArchive__itemColumn--destination").textContent.trim();
+        const companyImg = row.querySelector("img");
+        const company = companyImg ? companyImg.getAttribute("alt") : " ";
+        const flight = row.querySelector(".boardArchive__itemColumn.boardArchive__itemColumn--number").textContent.trim();
+        const csvRow = [];
+        csvRow.push(`${time};${airport};${company};${flight};;"POZ"`);
+        csv.push(csvRow.join("\n"));
+    });
+    csv.splice(1, 1);
+    return csv.join("\n");
+}
+
+
 const scrapers = {
     "airport.gdansk.pl": { scrapeFunction: scrapGDN, name: "GDN" },
     "airport.wroclaw.pl": { scrapeFunction: scrapWRO, name: "WRO" },
@@ -324,19 +344,46 @@ const scrapers = {
     "airport.com.pl": { scrapeFunction: scrapSSZ, name: "SSZ" },
     "rzeszowairport.pl": { scrapeFunction: scrapRZE, name: "RZE" },
     "plb.pl": { scrapeFunction: scrapBZG, name: "BZG" },
-    "lotniskowarszawa-radom.pl": { scrapeFunction: scrapRDO, name: "RDO" }
+    "lotniskowarszawa-radom.pl": { scrapeFunction: scrapRDO, name: "RDO" },
+    "poznanairport.pl": { scrapeFunction: scrapPOZ, name: "POZ" }
     //"lotnisko-chopina.pl": { scrapeFunction: scrapWAW, name: "WAW" },
-    //"poznanairport.pl": { scrapeFunction: scrapPOZ, name: "POZ" },
 };
 
 const scrapeData = async (url) => {
-    const browser = await puppeteer.launch({ headless: "new", args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    const selectedScraper = Object.keys(scrapers).find(key => url.includes(key));
+    if (!selectedScraper) throw new Error("Nie obsługujemy tego lotniska.");
+    if (selectedScraper.name === "POZ") {
+        try {
+            execSync('Xvfb :99 -screen 0 1366x768x24 &', { stdio: 'ignore' });
+            process.env.DISPLAY = ':99';
+            console.log("🖥️ Xvfb uruchomione dla POZ");
+        } catch (e) {
+            console.warn("⚠️ Nie udało się uruchomić Xvfb:", e.message);
+        }
+    }
+    const browser = await puppeteer.launch({ 
+        headless: selectedScraper.name === "POZ" ? false : "new",
+        args: ['--no-sandbox', '--disable-setuid-sandbox'] 
+    });
     const page = await browser.newPage();
 
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' +
                             '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
     await page.setViewport({ width: 1366, height: 768 });
+    await page.evaluateOnNewDocument(() => {
+        Object.defineProperty(navigator, 'webdriver', {
+          get: () => false,
+        });
+      
+        Object.defineProperty(navigator, 'languages', {
+          get: () => ['pl-PL', 'pl'],
+        });
+      
+        Object.defineProperty(navigator, 'plugins', {
+          get: () => [1, 2, 3],
+        });
+      });
     await page.setExtraHTTPHeaders({
         'Accept-Language': 'en-US,en;q=0.9',
         'Upgrade-Insecure-Requests': '1'
@@ -345,10 +392,7 @@ const scrapeData = async (url) => {
     await page.goto(url, { waitUntil: 'networkidle2' });
     await new Promise(resolve => setTimeout(resolve, 5000));
 
-    //await page.screenshot({ path: 'lotnisko_screenshot.png' });
-
-    const selectedScraper = Object.keys(scrapers).find(key => url.includes(key));
-    if (!selectedScraper) throw new Error("Nie obsługujemy tego lotniska.");
+    await page.screenshot({ path: 'lotnisko_screenshot.png' });
 
     if (scrapers[selectedScraper].name === "BZG") {
         await page.evaluate(() => {
@@ -455,7 +499,8 @@ const runScraper = async (url) => {
         runScraper('https://www.modlinairport.pl/pasazer/rozklad-lotow'),
         runScraper('https://airport.com.pl/'),
         runScraper('https://www.rzeszowairport.pl/pl/pasazer/loty'),
-        runScraper('https://www.lotniskowarszawa-radom.pl/loty/przyloty-i-odloty?flight_type=arrivals&flight=')
+        runScraper('https://www.lotniskowarszawa-radom.pl/loty/przyloty-i-odloty?flight_type=arrivals&flight='),
+        runScraper('https://poznanairport.pl/loty/przyloty-odloty/odloty/')
     ]);
     process.exit(0);
 })();
