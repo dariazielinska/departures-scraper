@@ -228,18 +228,48 @@ function scrapRZE() {
     return csv.join("\n");
 }
 
+function scrapBZG() {
+    const rows = document.querySelectorAll("#departures tbody tr");
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
+    rows.forEach(row => {
+        const tds = row.querySelectorAll("td");
+        const time = tds[0].childNodes[0]?.textContent.trim();
+        const [hour, minute] = time.split(':').map(Number);
+        const currentHour = hour;
+
+        if (currentHour < lastHour) {
+            dayOffset += 1;
+        }
+
+        const flightDate = new Date(startDate);
+        flightDate.setDate(flightDate.getDate() + dayOffset);
+        const formattedDate = flightDate.toISOString().split('T')[0];
+        lastHour = currentHour;
+        const airport = tds[2].childNodes[0].textContent.trim();
+        const flight = tds[0].childNodes[2]?.textContent.trim();
+        const csvRow = [];
+        csvRow.push(`${formattedDate};${time};${airport};;${flight};;BZG`);
+
+        csv.push(csvRow.join("\n"));
+    });
+    return csv.join("\n");
+}
+
 const scrapers = {
     "airport.gdansk.pl": { scrapeFunction: scrapGDN, name: "GDN" },
     "airport.wroclaw.pl": { scrapeFunction: scrapWRO, name: "WRO" },
-    //"lotnisko-chopina.pl": { scrapeFunction: scrapWAW, name: "WAW" },
     "katowice-airport.com": { scrapeFunction: scrapKTW, name: "KTW" },
-    //"poznanairport.pl": { scrapeFunction: scrapPOZ, name: "POZ" },
     "krakowairport.pl": { scrapeFunction: scrapKRK, name: "KRK" },
     "modlinairport.pl": { scrapeFunction: scrapWMI, name: "WMI" },
-    //"plb.pl": { scrapeFunction: scrapBZG, name: "BZG" },
     "airport.com.pl": { scrapeFunction: scrapSSZ, name: "SSZ" },
     "rzeszowairport.pl": { scrapeFunction: scrapRZE, name: "RZE" },
+    "plb.pl": { scrapeFunction: scrapBZG, name: "BZG" }
     //"lotniskowarszawa-radom.pl": { scrapeFunction: scrapRDO, name: "RDO" }
+    //"lotnisko-chopina.pl": { scrapeFunction: scrapWAW, name: "WAW" },
+    //"poznanairport.pl": { scrapeFunction: scrapPOZ, name: "POZ" },
 };
 
 const scrapeData = async (url) => {
@@ -258,7 +288,7 @@ const scrapeData = async (url) => {
     await page.goto(url, { waitUntil: 'networkidle2' });
     await new Promise(resolve => setTimeout(resolve, 5000));
 
-    //await page.screenshot({ path: 'lotnisko_screenshot.png' });
+    await page.screenshot({ path: 'lotnisko_screenshot.png' });
 
     const selectedScraper = Object.keys(scrapers).find(key => url.includes(key));
     if (!selectedScraper) throw new Error("Nie obsługujemy tego lotniska.");
@@ -360,6 +390,7 @@ const runScraper = async (url) => {
 
 (async () => {
     await Promise.all([
+        runScraper('https://plb.pl/'),
         runScraper('https://www.airport.gdansk.pl/loty/tablica-odlotow-p2.html'),
         runScraper('https://www.airport.wroclaw.pl/pasazer/odlatuje/sprawdz-status-lotu/'),
         runScraper('https://www.katowice-airport.com/'),
@@ -372,7 +403,6 @@ const runScraper = async (url) => {
 })();
 
 // Nie działające: 
-// runScraper('https://plb.pl/')
 // runScraper('https://www.lotnisko-chopina.pl/pl/odloty.html')
 // runScraper('https://poznanairport.pl/');
 // runScraper('https://www.lotniskowarszawa-radom.pl/loty/przyloty-i-odloty?flight_type=arrivals&flight=')
