@@ -258,6 +258,63 @@ function scrapBZG() {
     return csv.join("\n");
 }
 
+function scrapRDO() {
+    const buttonsContainer = document.querySelector(".f-table__buttons-container");
+    if (buttonsContainer) {
+        const button = buttonsContainer.querySelectorAll("div")[1];
+        if (button) {
+            button.click();
+        } 
+    } 
+
+    const start = Date.now();
+    while (Date.now() - start < 2000) {}
+
+    const rows = document.querySelectorAll(".f-table-container__content");
+    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+
+
+    function extractDayFromText(text) {
+        const match = text.match(/(\d{1,2})/);
+        return match ? parseInt(match[1], 10) : null;
+    }
+
+    function generateFormattedDate(day) {
+        let formattedDate;
+        if (day !== null) {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const dayFormatted = String(day).padStart(2, '0');
+            formattedDate = `${year}-${month}-${dayFormatted}`;
+        
+            console.log("Sformatowana data:", formattedDate);
+        } else {
+            console.log("Nie udało się wyciągnąć dnia z tekstu.");
+        }
+        return formattedDate
+    }
+
+    rows.forEach(row => {
+        const date = row.previousElementSibling.innerText
+        const day = extractDayFromText(date);
+        const formattedDate = generateFormattedDate(day)
+        const time = row.querySelector(".col.f-time").textContent.trim();
+        const airport = row.querySelector(".f-direction__origin").textContent.trim();
+        const companyImg = row.querySelector("img");
+        const company = companyImg?.getAttribute("src")?.includes("lot-logo")
+        ? "LOT"
+        : companyImg?.getAttribute("src")?.includes("wizz")
+        ? "WIZZAIR"
+        : " ";
+        const flight = row.querySelector(".f-direction__number").textContent.trim();
+        const csvRow = [];
+        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"RDO"`);
+        csv.push(csvRow.join("\n"));
+    });
+    return csv.join("\n");
+}
+
 const scrapers = {
     "airport.gdansk.pl": { scrapeFunction: scrapGDN, name: "GDN" },
     "airport.wroclaw.pl": { scrapeFunction: scrapWRO, name: "WRO" },
@@ -266,8 +323,8 @@ const scrapers = {
     "modlinairport.pl": { scrapeFunction: scrapWMI, name: "WMI" },
     "airport.com.pl": { scrapeFunction: scrapSSZ, name: "SSZ" },
     "rzeszowairport.pl": { scrapeFunction: scrapRZE, name: "RZE" },
-    "plb.pl": { scrapeFunction: scrapBZG, name: "BZG" }
-    //"lotniskowarszawa-radom.pl": { scrapeFunction: scrapRDO, name: "RDO" }
+    "plb.pl": { scrapeFunction: scrapBZG, name: "BZG" },
+    "lotniskowarszawa-radom.pl": { scrapeFunction: scrapRDO, name: "RDO" }
     //"lotnisko-chopina.pl": { scrapeFunction: scrapWAW, name: "WAW" },
     //"poznanairport.pl": { scrapeFunction: scrapPOZ, name: "POZ" },
 };
@@ -288,7 +345,7 @@ const scrapeData = async (url) => {
     await page.goto(url, { waitUntil: 'networkidle2' });
     await new Promise(resolve => setTimeout(resolve, 5000));
 
-    await page.screenshot({ path: 'lotnisko_screenshot.png' });
+    //await page.screenshot({ path: 'lotnisko_screenshot.png' });
 
     const selectedScraper = Object.keys(scrapers).find(key => url.includes(key));
     if (!selectedScraper) throw new Error("Nie obsługujemy tego lotniska.");
@@ -397,7 +454,8 @@ const runScraper = async (url) => {
         runScraper('https://www.krakowairport.pl/pl/pasazer/loty/odloty'),
         runScraper('https://www.modlinairport.pl/pasazer/rozklad-lotow'),
         runScraper('https://airport.com.pl/'),
-        runScraper('https://www.rzeszowairport.pl/pl/pasazer/loty')
+        runScraper('https://www.rzeszowairport.pl/pl/pasazer/loty'),
+        runScraper('https://www.lotniskowarszawa-radom.pl/loty/przyloty-i-odloty?flight_type=arrivals&flight=')
     ]);
     process.exit(0);
 })();
@@ -405,4 +463,3 @@ const runScraper = async (url) => {
 // Nie działające: 
 // runScraper('https://www.lotnisko-chopina.pl/pl/odloty.html')
 // runScraper('https://poznanairport.pl/');
-// runScraper('https://www.lotniskowarszawa-radom.pl/loty/przyloty-i-odloty?flight_type=arrivals&flight=')
