@@ -101,7 +101,7 @@ function scrapKTW() {
 
 function scrapKRK() {
     const rows = document.querySelectorAll(".table-responsive.table-departures-arrivals table.table tbody tr");
-    const csv = ['Data;Czas;Kierunek;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -123,7 +123,7 @@ function scrapKRK() {
         const airport = tds[0].textContent.trim();
         const flight = tds[1].textContent.trim();
         const csvRow = [];
-        csvRow.push(`${formattedDate};${time};${airport};${flight};;"KRK"`);
+        csvRow.push(`${formattedDate};${time};${airport};;${flight};;"KRK"`);
         csv.push(csvRow.join("\n"));
     });
     return csv.join("\n");
@@ -163,7 +163,7 @@ function scrapWMI() {
 
 function scrapSSZ() {
     const rows = document.querySelectorAll("#departuresInfo tr");
-    const csv = ['Data;Czas;Kierunek;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -188,7 +188,7 @@ function scrapSSZ() {
         const airport = tds[2]?.textContent;
         const flight = tds[1]?.textContent;
         const csvRow = [];
-        csvRow.push(`${formattedDate};${time};${airport};${flight};;"SSZ"`);
+        csvRow.push(`${formattedDate};${time};${airport};;${flight};;"SSZ"`);
         csv.push(csvRow.join("\n"));
     });
     return csv.join("\n");
