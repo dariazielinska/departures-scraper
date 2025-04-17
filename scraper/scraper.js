@@ -131,7 +131,7 @@ function scrapKRK() {
 
 function scrapWMI() {
     const rows = document.querySelectorAll("table.departures-table tbody tr");
-    const csv = ['Data;Czas;Kierunek;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -154,7 +154,7 @@ function scrapWMI() {
             const airport = tds[1].textContent.trim();
             const flight = tds[0].textContent.trim();
             const csvRow = [];
-            csvRow.push(`${formattedDate};${time};${airport};${flight};;"WMI"`);
+            csvRow.push(`${formattedDate};${time};${airport};;${flight};;"WMI"`);
             csv.push(csvRow.join("\n"));
         }
     });
@@ -272,7 +272,7 @@ function scrapRDO() {
     while (Date.now() - start < 2000) {}
 
     const rows = document.querySelectorAll(".f-table-container__content");
-    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
 
 
     function extractDayFromText(text) {
