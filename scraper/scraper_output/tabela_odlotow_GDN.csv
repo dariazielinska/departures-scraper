@@ -965,6 +965,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe
 2025-04-17;20:20;Kopenhaga;WIZZ AIR;W6 1741;;"GDN"
 2025-04-17;20:45;Antalia;;ENT4711;;"GDN"
 2025-04-17;21:20;Brize norton ab;;RRR2207;;"GDN"
+2025-04-17;21:20;Brize norton ab;;RRR2206;;"GDN"
 2025-04-17;21:25;Warszawa;LOT;LO3826;;"GDN"
 2025-04-17;21:45;Mediolan bergamo;RYANAIR;FR 3279;;"GDN"
 2025-04-17;21:50;Oslo gardermoen;Norwegian;DY 1055;;"GDN"
@@ -985,3 +986,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe
 2025-04-18;06:25;Frankfurt;LUFTHANSA;LH 1383;;"GDN"
 2025-04-18;06:40;Stavanger;WIZZ AIR;W6 1747;;"GDN"
 2025-04-18;07:15;Dortmund;WIZZ AIR;W6 1661;;"GDN"
+2025-04-18;07:20;Goteborg;RYANAIR;FR 6095;;"GDN"
+2025-04-18;08:05;Wrocław;RYANAIR;FR 4106;;"GDN"
