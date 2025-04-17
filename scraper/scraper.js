@@ -349,6 +349,37 @@ function scrapPOZ() {
     return csv.join("\n");
 }
 
+function scrapWAW() {
+    const rows = document.querySelectorAll("table.flightboard.departures tbody tr.tooltip");
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
+    rows.forEach(row => {
+        const tds = row.querySelectorAll("td");
+        const time = tds[0].textContent.trim();
+        const [hour, minute] = time.split(':').map(Number);
+        const currentHour = hour;
+
+        if (currentHour < lastHour) {
+            dayOffset += 1;
+        }
+
+        const flightDate = new Date(startDate);
+        flightDate.setDate(flightDate.getDate() + dayOffset);
+        const formattedDate = flightDate.toISOString().split('T')[0];
+        lastHour = currentHour;
+        const airport = tds[1].textContent.trim();
+        const company = tds[4].textContent.trim();
+        const flight = tds[2].textContent.trim();
+        const csvRow = [];
+        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"WAW"`);
+        csv.push(csvRow.join("\n"));
+    });
+    csv.splice(1, 1);
+    return csv.join("\n");
+
+}
 
 const scrapers = {
     "airport.gdansk.pl": { scrapeFunction: scrapGDN, name: "GDN" },
@@ -360,8 +391,8 @@ const scrapers = {
     "rzeszowairport.pl": { scrapeFunction: scrapRZE, name: "RZE" },
     "plb.pl": { scrapeFunction: scrapBZG, name: "BZG" },
     "lotniskowarszawa-radom.pl": { scrapeFunction: scrapRDO, name: "RDO" },
-    "poznanairport.pl": { scrapeFunction: scrapPOZ, name: "POZ" }
-    //"lotnisko-chopina.pl": { scrapeFunction: scrapWAW, name: "WAW" },
+    "poznanairport.pl": { scrapeFunction: scrapPOZ, name: "POZ" },
+    "lotnisko-chopina.pl": { scrapeFunction: scrapWAW, name: "WAW" }
 };
 
 const scrapeData = async (url) => {
@@ -369,11 +400,11 @@ const scrapeData = async (url) => {
     if (!selectedScraperKey) throw new Error("Nie obsługujemy tego lotniska.");
     const selectedScraper = scrapers[selectedScraperKey];
 
-    if (selectedScraper.name === "POZ") {
+    if (selectedScraper.name === "POZ" || selectedScraper.name === "WAW") {
         try {
             execSync('Xvfb :99 -screen 0 1366x768x24 &', { stdio: 'ignore' });
             process.env.DISPLAY = ':99';
-            console.log("🖥️ Xvfb uruchomione dla POZ");
+            console.log("🖥️ Xvfb uruchomione");
         } catch (e) {
             console.warn("⚠️ Nie udało się uruchomić Xvfb:", e.message);
         }
@@ -384,7 +415,7 @@ const scrapeData = async (url) => {
     });
     const page = await browser.newPage();
 
-    if(selectedScraper.name === "POZ") {
+    if(selectedScraper.name === "POZ" || selectedScraper.name === "WAW") {
         await page.setViewport({
             width: 375,
             height: 667,
@@ -514,10 +545,8 @@ const runScraper = async (url) => {
         runScraper('https://airport.com.pl/'),
         runScraper('https://www.rzeszowairport.pl/pl/pasazer/loty'),
         runScraper('https://www.lotniskowarszawa-radom.pl/loty/przyloty-i-odloty?flight_type=arrivals&flight='),
-        runScraper('https://poznanairport.pl/loty/przyloty-odloty/odloty/')
+        runScraper('https://poznanairport.pl/loty/przyloty-odloty/odloty/'),
+        runScraper('https://www.lotnisko-chopina.pl/pl/odloty.html')
     ]);
     process.exit(0);
 })();
-
-// Nie działające: 
-// runScraper('https://www.lotnisko-chopina.pl/pl/odloty.html')
