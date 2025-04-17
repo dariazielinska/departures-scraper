@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer-extra');
 const stealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
+const { execSync } = require('child_process');
 
 puppeteer.use(stealthPlugin());
 
@@ -317,17 +318,31 @@ function scrapRDO() {
 
 function scrapPOZ() {
     const rows = document.querySelectorAll(".boardArchive__itemColumns");
-    const csv = ['Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const startDate = new Date();
+    let lastHour = 0;
+    let dayOffset = 0;
     rows.forEach(row => {
         const timeContainer = row.querySelector(".boardArchive__itemColumn.boardArchive__itemColumn--time");
         const timeNode = timeContainer.querySelector("div").childNodes[1];
         const time = timeNode ? timeNode.textContent.trim() : '-';
+        const [hour, minute] = time.split(':').map(Number);
+        const currentHour = hour;
+
+        if (currentHour < lastHour) {
+            dayOffset += 1;
+        }
+
+        const flightDate = new Date(startDate);
+        flightDate.setDate(flightDate.getDate() + dayOffset);
+        const formattedDate = flightDate.toISOString().split('T')[0];
+        lastHour = currentHour;
         const airport = row.querySelector(".boardArchive__itemColumn.boardArchive__itemColumn--destination").textContent.trim();
         const companyImg = row.querySelector("img");
         const company = companyImg ? companyImg.getAttribute("alt") : " ";
         const flight = row.querySelector(".boardArchive__itemColumn.boardArchive__itemColumn--number").textContent.trim();
         const csvRow = [];
-        csvRow.push(`${time};${airport};${company};${flight};;"POZ"`);
+        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"POZ"`);
         csv.push(csvRow.join("\n"));
     });
     csv.splice(1, 1);
@@ -350,8 +365,10 @@ const scrapers = {
 };
 
 const scrapeData = async (url) => {
-    const selectedScraper = Object.keys(scrapers).find(key => url.includes(key));
-    if (!selectedScraper) throw new Error("Nie obsługujemy tego lotniska.");
+    const selectedScraperKey = Object.keys(scrapers).find(key => url.includes(key));
+    if (!selectedScraperKey) throw new Error("Nie obsługujemy tego lotniska.");
+    const selectedScraper = scrapers[selectedScraperKey];
+
     if (selectedScraper.name === "POZ") {
         try {
             execSync('Xvfb :99 -screen 0 1366x768x24 &', { stdio: 'ignore' });
@@ -367,46 +384,43 @@ const scrapeData = async (url) => {
     });
     const page = await browser.newPage();
 
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' +
-                            '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+    if(selectedScraper.name === "POZ") {
+        await page.setViewport({
+            width: 375,
+            height: 667,
+            isMobile: true,
+            hasTouch: true
+        });
+        await page.setExtraHTTPHeaders({
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/16A366 Safari/604.1' // User-agent iPhone
+        });
+    } else {
 
-    await page.setViewport({ width: 1366, height: 768 });
-    await page.evaluateOnNewDocument(() => {
-        Object.defineProperty(navigator, 'webdriver', {
-          get: () => false,
-        });
-      
-        Object.defineProperty(navigator, 'languages', {
-          get: () => ['pl-PL', 'pl'],
-        });
-      
-        Object.defineProperty(navigator, 'plugins', {
-          get: () => [1, 2, 3],
-        });
-      });
-    await page.setExtraHTTPHeaders({
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Upgrade-Insecure-Requests': '1'
-    });
+        await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' +
+            '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+    }
+
 
     await page.goto(url, { waitUntil: 'networkidle2' });
     await new Promise(resolve => setTimeout(resolve, 5000));
 
-    await page.screenshot({ path: 'lotnisko_screenshot.png' });
+    //await page.screenshot({ path: 'lotnisko_screenshot.png' });
 
-    if (scrapers[selectedScraper].name === "BZG") {
+    if (selectedScraper.name === "BZG") {
         await page.evaluate(() => {
             document.querySelector('.moove-gdpr-infobar-allow-all').click();
         });
-    } else if (scrapers[selectedScraper].name === "RZE") {
+    } else if (selectedScraper.name === "RZE") {
         await page.evaluate(() => {
             document.querySelector('#cookies a b').click();
         });
     }
 
-    const data = await page.evaluate(scrapers[selectedScraper].scrapeFunction);
+    const data = await page.evaluate(selectedScraper.scrapeFunction);
     await browser.close();
-    return { data, airportCode: scrapers[selectedScraper].name };
+    return { data, airportCode: selectedScraper.name };
 };
 
 const saveCSV = (csvContent, airportCode) => {
@@ -507,4 +521,3 @@ const runScraper = async (url) => {
 
 // Nie działające: 
 // runScraper('https://www.lotnisko-chopina.pl/pl/odloty.html')
-// runScraper('https://poznanairport.pl/');

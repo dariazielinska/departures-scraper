@@ -1,7 +1,7 @@
 {
     "name": "my-scraper-env",
     "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-    "postCreateCommand": "sudo apt update && sudo apt install -y xvfb",
+    "postCreateCommand": "sudo apt update && sudo apt install -y libnss3 libxss1 libatk-bridge2.0-0 libgtk-3-0 libasound2 libdrm2 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libpango-1.0-0 libcups2 libatk1.0-0",
     "features": {},
     "customizations": {
       "vscode": {
