@@ -1159,3 +1159,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe
 2025-04-20;11:50;Amsterdam;KLM;KL 1304;;"GDN"
 2025-04-20;11:55;Helsinki;FINNAIR;AY 1176;;"GDN"
 2025-04-20;12:00;Newcastle;RYANAIR;FR 6103;;"GDN"
+2025-04-20;12:10;Wrocław;RYANAIR;FR 4106;;"GDN"
+2025-04-20;12:25;Hamburg;RYANAIR;FR 6119;;"GDN"
+2025-04-20;12:25;Kopenhaga;WIZZ AIR;W6 1741;;"GDN"
+2025-04-20;12:55;Rzym ciampino;RYANAIR;FR 9922;;"GDN"
