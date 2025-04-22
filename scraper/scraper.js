@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer-extra');
 const stealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
-const { execSync } = require('child_process');
 
 puppeteer.use(stealthPlugin());
 
@@ -400,17 +399,8 @@ const scrapeData = async (url) => {
     if (!selectedScraperKey) throw new Error("Nie obsługujemy tego lotniska.");
     const selectedScraper = scrapers[selectedScraperKey];
 
-    if (selectedScraper.name === "POZ" || selectedScraper.name === "WAW") {
-        try {
-            execSync('Xvfb :99 -screen 0 1366x768x24 &', { stdio: 'ignore' });
-            process.env.DISPLAY = ':99';
-            console.log("🖥️ Xvfb uruchomione");
-        } catch (e) {
-            console.warn("⚠️ Nie udało się uruchomić Xvfb:", e.message);
-        }
-    }
     const browser = await puppeteer.launch({ 
-        headless: selectedScraper.name === "POZ" ? false : "new",
+        headless: "new",
         args: ['--no-sandbox', '--disable-setuid-sandbox'] 
     });
     const page = await browser.newPage();
@@ -428,7 +418,6 @@ const scrapeData = async (url) => {
             'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/16A366 Safari/604.1' // User-agent iPhone
         });
     } else {
-
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' +
             '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
     }
