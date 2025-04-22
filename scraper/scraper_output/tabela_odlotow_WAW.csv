@@ -1521,3 +1521,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe
 2025-04-23;07:20;Amsterdam (AMS);LOT;LO 265;;"WAW"
 2025-04-23;07:20;Genewa (GVA);LOT;LO 417;;"WAW"
 2025-04-23;07:20;Paryż (CDG);LOT;LO 331;;"WAW"
+2025-04-23;07:20;Rzeszów (RZE);LOT;LO 3805;;"WAW"
+2025-04-23;07:25;Londyn-Heathrow (LHR);LOT;LO 281;;"WAW"
+2025-04-23;07:30;Antalia (AYT);LOT;LO 6371;;"WAW"
+2025-04-23;07:35;Mediolan (MXP);LOT;LO 317;;"WAW"
