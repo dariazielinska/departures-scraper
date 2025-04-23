@@ -1528,6 +1528,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-24;14:20;Amsterdam;KLM;KL 1306;0;;"GDN"
 2025-04-24;14:25;Frankfurt;LUFTHANSA;LH 1379;0;;"GDN"
 2025-04-24;14:30;Oslo torp;RYANAIR;FR 3277;0;;"GDN"
+2025-04-24;14:30;Hurghada;;QU 5821;0;;"GDN"
 2025-04-24;14:35;Stavanger;WIZZ AIR;W6 1747;0;;"GDN"
 2025-04-24;14:50;Warszawa;LOT;LO3838;0;;"GDN"
 2025-04-24;14:50;Zurych;;LX 1381;0;;"GDN"
