@@ -430,7 +430,7 @@ const scrapeData = async (url) => {
 
     if (selectedScraper.name === "BZG") {
         await page.evaluate(() => {
-            document.querySelector('.moove-gdpr-infobar-allow-all').click();
+            document.querySelector('[aria-label="Akceptuj wszystko"]').click();
         });
     } else if (selectedScraper.name === "RZE") {
         await page.evaluate(() => {
