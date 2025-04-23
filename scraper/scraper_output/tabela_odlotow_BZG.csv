@@ -1,47 +1,47 @@
-Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe
-2025-04-07;10:00;alicante;;FR 7833;;BZG
-2025-04-07;15:00;warszawa;;LO 3994;;BZG
-2025-04-07;22:15;londyn-stansted;;FR 2461;;BZG
-2025-04-08;11:40;bristol;;FR 9504;;BZG
-2025-04-08;15:00;warszawa;;LO 3994;;BZG
-2025-04-08;16:00;marsa alam;;ENT 4219;;BZG
-2025-04-08;20:25;londyn-luton;;FR 1641;;BZG
-2025-04-09;09:40;birmingham;;FR 1213;;BZG
-2025-04-09;15:00;warszawa;;LO 3994;;BZG
-2025-04-09;22:15;londyn-stansted;;FR 2461;;BZG
-2025-04-09;22:55;dublin;;FR 1893;;BZG
-2025-04-11;10:10;londyn-luton;;FR 1641;;BZG
-2025-04-11;15:00;warszawa;;LO 3994;;BZG
-2025-04-11;22:35;birmingham;;FR 1213;;BZG
-2025-04-11;23:45;londyn-stansted;;FR 2461;;BZG
-2025-04-16;09:40;birmingham;;FR 1213;;BZG
-2025-04-16;15:00;warszawa;;LO 3994;;BZG
-2025-04-16;22:15;londyn-stansted;;FR 2461;;BZG
-2025-04-16;22:55;dublin;;FR 1893;;BZG
-2025-04-17;15:00;warszawa;;LO 3994;;BZG
-2025-04-17;21:10;alicante;;FR 7833;;BZG
-2025-04-18;10:10;londyn-luton;;FR 1641;;BZG
-2025-04-18;15:00;warszawa;;LO 3994;;BZG
-2025-04-18;22:35;birmingham;;FR 1213;;BZG
-2025-04-18;23:45;londyn-stansted;;FR 2461;;BZG
-2025-04-19;09:15;antalya;;PC6280;;BZG
-2025-04-19;09:40;antalya;;RR7265;;BZG
-2025-04-19;23:10;bristol;;FR9504;;BZG
-2025-04-20;09:55;dublin;;FR1893;;BZG
-2025-04-20;10:05;londyn-luton;;FR1641;;BZG
-2025-04-20;14:35;frankfurt;;LH1361;;BZG
-2025-04-20;15:00;warszawa;;LO3994;;BZG
-2025-04-20;18:15;birmingham;;FR1213;;BZG
-2025-04-20;19:05;londyn-stansted;;FR2461;;BZG
-2025-04-21;10:00;alicante;;FR7833;;BZG
-2025-04-21;14:15;warszawa;;LO9502;;BZG
-2025-04-21;15:00;warszawa;;LO3994;;BZG
-2025-04-21;22:40;londyn;;FR2461;;BZG
-2025-04-22;11:40;bristol;;FR 9504;;BZG
-2025-04-22;15:00;warszawa;;LO 3994;;BZG
-2025-04-22;16:00;marsa alam;;ENT 4219;;BZG
-2025-04-22;20:25;londyn-luton;;FR 1641;;BZG
-2025-04-23;09:40;birmingham;;FR 1213;;BZG
-2025-04-23;15:00;warszawa;;LO 3994;;BZG
-2025-04-23;22:15;londyn-stansted;;FR 2461;;BZG
-2025-04-23;22:55;dublin;;FR 1893;;BZG
+Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
+2025-04-07;10:00;alicante;;FR 7833;0;;BZG
+2025-04-07;15:00;warszawa;;LO 3994;0;;BZG
+2025-04-07;22:15;londyn-stansted;;FR 2461;0;;BZG
+2025-04-08;11:40;bristol;;FR 9504;0;;BZG
+2025-04-08;15:00;warszawa;;LO 3994;0;;BZG
+2025-04-08;16:00;marsa alam;;ENT 4219;0;;BZG
+2025-04-08;20:25;londyn-luton;;FR 1641;0;;BZG
+2025-04-09;09:40;birmingham;;FR 1213;0;;BZG
+2025-04-09;15:00;warszawa;;LO 3994;0;;BZG
+2025-04-09;22:15;londyn-stansted;;FR 2461;0;;BZG
+2025-04-09;22:55;dublin;;FR 1893;0;;BZG
+2025-04-11;10:10;londyn-luton;;FR 1641;0;;BZG
+2025-04-11;15:00;warszawa;;LO 3994;0;;BZG
+2025-04-11;22:35;birmingham;;FR 1213;0;;BZG
+2025-04-11;23:45;londyn-stansted;;FR 2461;0;;BZG
+2025-04-16;09:40;birmingham;;FR 1213;0;;BZG
+2025-04-16;15:00;warszawa;;LO 3994;0;;BZG
+2025-04-16;22:15;londyn-stansted;;FR 2461;0;;BZG
+2025-04-16;22:55;dublin;;FR 1893;0;;BZG
+2025-04-17;15:00;warszawa;;LO 3994;0;;BZG
+2025-04-17;21:10;alicante;;FR 7833;0;;BZG
+2025-04-18;10:10;londyn-luton;;FR 1641;0;;BZG
+2025-04-18;15:00;warszawa;;LO 3994;0;;BZG
+2025-04-18;22:35;birmingham;;FR 1213;0;;BZG
+2025-04-18;23:45;londyn-stansted;;FR 2461;0;;BZG
+2025-04-19;09:15;antalya;;PC6280;0;;BZG
+2025-04-19;09:40;antalya;;RR7265;0;;BZG
+2025-04-19;23:10;bristol;;FR9504;0;;BZG
+2025-04-20;09:55;dublin;;FR1893;0;;BZG
+2025-04-20;10:05;londyn-luton;;FR1641;0;;BZG
+2025-04-20;14:35;frankfurt;;LH1361;0;;BZG
+2025-04-20;15:00;warszawa;;LO3994;0;;BZG
+2025-04-20;18:15;birmingham;;FR1213;0;;BZG
+2025-04-20;19:05;londyn-stansted;;FR2461;0;;BZG
+2025-04-21;10:00;alicante;;FR7833;0;;BZG
+2025-04-21;14:15;warszawa;;LO9502;0;;BZG
+2025-04-21;15:00;warszawa;;LO3994;0;;BZG
+2025-04-21;22:40;londyn;;FR2461;0;;BZG
+2025-04-22;11:40;bristol;;FR 9504;0;;BZG
+2025-04-22;15:00;warszawa;;LO 3994;0;;BZG
+2025-04-22;16:00;marsa alam;;ENT 4219;0;;BZG
+2025-04-22;20:25;londyn-luton;;FR 1641;0;;BZG
+2025-04-23;09:40;birmingham;;FR 1213;0;;BZG
+2025-04-23;15:00;warszawa;;LO 3994;0;;BZG
+2025-04-23;22:15;londyn-stansted;;FR 2461;0;;BZG
+2025-04-23;22:55;dublin;;FR 1893;0;;BZG

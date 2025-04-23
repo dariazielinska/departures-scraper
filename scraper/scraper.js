@@ -6,7 +6,7 @@ puppeteer.use(stealthPlugin());
 
 const scrapGDN = () => {
     const rows = document.querySelectorAll(".table__body .table__element");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
 
     const startDate = new Date();
     let lastHour = 0;
@@ -29,14 +29,14 @@ const scrapGDN = () => {
         const airport = row.querySelector(".table__airport").textContent;
         const company = row.querySelector(".table__company").textContent;
         const flight = row.querySelector(".table__flight").textContent;
-        csv.push(`${formattedDate};${time};${airport};${company};${flight};;"GDN"`);
+        csv.push(`${formattedDate};${time};${airport};${company};${flight};0;;"GDN"`);
     });
     return csv.join("\n");
 };
 
 const scrapWRO = () => {
     const rows = document.querySelectorAll(".n-flights__data.desktop.n-flights__departures");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
 
     const startDate = new Date();
     let lastHour = 0;
@@ -61,14 +61,14 @@ const scrapWRO = () => {
         const companyImg = row.querySelector("img");
         const company = companyImg ? companyImg.getAttribute("alt") : " ";
         const flight = row.querySelector(".direction__number")?.textContent.trim() || "Brak danych";
-        csv.push(`${formattedDate};${time};${airport};${company};${flight};;"WRO"`);
+        csv.push(`${formattedDate};${time};${airport};${company};${flight};0;;"WRO"`);
     });
     return csv.join("\n");
 };
 
 function scrapKTW() {
     const rows = document.querySelectorAll(".timetable__row.flight-board__row");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -92,7 +92,7 @@ function scrapKTW() {
         const company = companyImg ? companyImg.getAttribute("alt") : " ";
         const flight = row.querySelector(".timetable__col.flight-board__col--4").textContent;
         const csvRow = [];
-        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"KTW"`);
+        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};0;;"KTW"`);
         csv.push(csvRow.join("\n"));
     });
     return csv.join("\n");
@@ -100,7 +100,7 @@ function scrapKTW() {
 
 function scrapKRK() {
     const rows = document.querySelectorAll(".table-responsive.table-departures-arrivals table.table tbody tr");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -122,7 +122,7 @@ function scrapKRK() {
         const airport = tds[0].textContent.trim();
         const flight = tds[1].textContent.trim();
         const csvRow = [];
-        csvRow.push(`${formattedDate};${time};${airport};;${flight};;"KRK"`);
+        csvRow.push(`${formattedDate};${time};${airport};;${flight};0;;"KRK"`);
         csv.push(csvRow.join("\n"));
     });
     return csv.join("\n");
@@ -130,7 +130,7 @@ function scrapKRK() {
 
 function scrapWMI() {
     const rows = document.querySelectorAll("table.departures-table tbody tr");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -153,7 +153,7 @@ function scrapWMI() {
             const airport = tds[1].textContent.trim();
             const flight = tds[0].textContent.trim();
             const csvRow = [];
-            csvRow.push(`${formattedDate};${time};${airport};;${flight};;"WMI"`);
+            csvRow.push(`${formattedDate};${time};${airport};;${flight};0;"WMI"`);
             csv.push(csvRow.join("\n"));
         }
     });
@@ -162,7 +162,7 @@ function scrapWMI() {
 
 function scrapSSZ() {
     const rows = document.querySelectorAll("#departuresInfo tr");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -187,7 +187,7 @@ function scrapSSZ() {
         const airport = tds[2]?.textContent;
         const flight = tds[1]?.textContent;
         const csvRow = [];
-        csvRow.push(`${formattedDate};${time};${airport};;${flight};;"SSZ"`);
+        csvRow.push(`${formattedDate};${time};${airport};;${flight};0;;"SSZ"`);
         csv.push(csvRow.join("\n"));
     });
     return csv.join("\n");
@@ -195,7 +195,7 @@ function scrapSSZ() {
 
 function scrapRZE() {
     const rows = document.querySelectorAll(".table-responsive.timetable-departures tr");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -221,7 +221,7 @@ function scrapRZE() {
             const company = companyImg ? companyImg.getAttribute("alt") : (tds[0].textContent ? tds[0].textContent.trim() : " ");
             const flight = tds[3].textContent;
             const csvRow = [];
-            csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"RZE"`);
+            csvRow.push(`${formattedDate};${time};${airport};${company};${flight};0;;"RZE"`);
             csv.push(csvRow.join("\n"));
         }
     });
@@ -230,7 +230,7 @@ function scrapRZE() {
 
 function scrapBZG() {
     const rows = document.querySelectorAll("#departures tbody tr");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -251,7 +251,7 @@ function scrapBZG() {
         const airport = tds[2].childNodes[0].textContent.trim();
         const flight = tds[0].childNodes[2]?.textContent.trim();
         const csvRow = [];
-        csvRow.push(`${formattedDate};${time};${airport};;${flight};;BZG`);
+        csvRow.push(`${formattedDate};${time};${airport};;${flight};0;;BZG`);
 
         csv.push(csvRow.join("\n"));
     });
@@ -271,7 +271,7 @@ function scrapRDO() {
     while (Date.now() - start < 2000) {}
 
     const rows = document.querySelectorAll(".f-table-container__content");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
 
 
     function extractDayFromText(text) {
@@ -309,7 +309,7 @@ function scrapRDO() {
         : " ";
         const flight = row.querySelector(".f-direction__number").textContent.trim();
         const csvRow = [];
-        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"RDO"`);
+        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};0;;"RDO"`);
         csv.push(csvRow.join("\n"));
     });
     return csv.join("\n");
@@ -317,7 +317,7 @@ function scrapRDO() {
 
 function scrapPOZ() {
     const rows = document.querySelectorAll(".boardArchive__itemColumns");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -341,7 +341,7 @@ function scrapPOZ() {
         const company = companyImg ? companyImg.getAttribute("alt") : " ";
         const flight = row.querySelector(".boardArchive__itemColumn.boardArchive__itemColumn--number").textContent.trim();
         const csvRow = [];
-        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"POZ"`);
+        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};0;;"POZ"`);
         csv.push(csvRow.join("\n"));
     });
     csv.splice(1, 1);
@@ -350,7 +350,7 @@ function scrapPOZ() {
 
 function scrapWAW() {
     const rows = document.querySelectorAll("table.flightboard.departures tbody tr.tooltip");
-    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;;Lotnisko wylotowe'];
+    const csv = ['Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe'];
     const startDate = new Date();
     let lastHour = 0;
     let dayOffset = 0;
@@ -372,7 +372,7 @@ function scrapWAW() {
         const company = tds[4].textContent.trim();
         const flight = tds[2].textContent.trim();
         const csvRow = [];
-        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};;"WAW"`);
+        csvRow.push(`${formattedDate};${time};${airport};${company};${flight};0;;"WAW"`);
         csv.push(csvRow.join("\n"));
     });
     csv.splice(1, 1);
