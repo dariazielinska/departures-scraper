@@ -1615,3 +1615,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-25;10:05;Paryż beauvais;WIZZ AIR;W6 1631;0;;"GDN"
 2025-04-25;10:10;Kopenhaga;SAS;SK 756;0;;"GDN"
 2025-04-25;10:55;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
+2025-04-25;11:15;Bergen;WIZZ AIR;W6 1745;0;;"GDN"
+2025-04-25;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
+2025-04-25;12:00;Warszawa;LOT;LO3836;0;;"GDN"
