@@ -2072,3 +2072,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-25;08:00;Praga (PRG);LOT;LO 523;0;;"WAW"
 2025-04-25;08:00;Wilno (VNO);LOT;LO 777;0;;"WAW"
 2025-04-25;08:05;Sztokholm (ARN);LOT;LO 453;0;;"WAW"
+2025-04-25;08:10;Budapeszt (BUD);Wizz Air;W6 2468;0;;"WAW"
+2025-04-25;08:25;Kopenhaga (CPH);LOT;LO 463;0;;"WAW"
+2025-04-25;08:25;Wiedeń (VIE);Austrian;OS 626;0;;"WAW"
