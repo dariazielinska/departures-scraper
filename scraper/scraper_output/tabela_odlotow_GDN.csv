@@ -1699,3 +1699,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-26;09:05;Oslo gardermoen;Norwegian;DY 1051;0;;"GDN"
 2025-04-26;09:45;Växjö-smaland;RYANAIR;FR 7271;0;;"GDN"
 2025-04-26;10:20;Alesund vigra;WIZZ AIR;W6 1765;0;;"GDN"
+2025-04-26;11:15;Bergen;WIZZ AIR;W6 1745;0;;"GDN"
+2025-04-26;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
+2025-04-26;12:00;Helsinki;FINNAIR;AY 1176;0;;"GDN"
+2025-04-26;12:00;Warszawa;LOT;LO3836;0;;"GDN"
