@@ -1871,3 +1871,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-28;06:20;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
 2025-04-28;06:25;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
 2025-04-28;06:40;Stavanger;WIZZ AIR;W6 1747;0;;"GDN"
+2025-04-28;07:15;Dortmund;WIZZ AIR;W6 1661;0;;"GDN"
+2025-04-28;07:20;Eindhoven;;ENT573F;0;;"GDN"
+2025-04-28;07:20;Paryż beauvais;RYANAIR;FR 8987;0;;"GDN"
+2025-04-28;07:30;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
