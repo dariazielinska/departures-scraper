@@ -1889,3 +1889,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-28;11:55;Wrocław;RYANAIR;FR 4106;0;;"GDN"
 2025-04-28;12:00;Helsinki;FINNAIR;AY 1176;0;;"GDN"
 2025-04-28;12:00;Warszawa;LOT;LO3836;0;;"GDN"
+2025-04-28;12:25;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
+2025-04-28;12:45;Rzym ciampino;RYANAIR;FR 9922;0;;"GDN"
+2025-04-28;12:50;Bergen;Norwegian;DY 1031;0;;"GDN"
