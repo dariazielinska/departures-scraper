@@ -3190,3 +3190,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-29;08:10;Budapeszt (BUD);Wizz Air;W6 2468;0;;"WAW"
 2025-04-29;08:10;Lyon (LYS);LOT;LO 345;0;;"WAW"
 2025-04-29;08:15;Stuttgart (STR);LOT;LO 371;0;;"WAW"
+2025-04-29;08:25;Kopenhaga (CPH);LOT;LO 463;0;;"WAW"
+2025-04-29;08:25;Wiedeń (VIE);Austrian;OS 626;0;;"WAW"
+2025-04-29;08:30;Marsa-Alam (RMF);Enter Air;ENT7031;0;;"WAW"
+2025-04-29;08:50;Londyn-Heathrow (LHR);British Airways;BA 879;0;;"WAW"
