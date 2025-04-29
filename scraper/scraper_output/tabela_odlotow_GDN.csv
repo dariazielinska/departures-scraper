@@ -2066,3 +2066,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-30;11:50;Antalia;;ENT7553;0;;"GDN"
 2025-04-30;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
 2025-04-30;12:00;Warszawa;LOT;LO3836;0;;"GDN"
+2025-04-30;12:25;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
+2025-04-30;12:30;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
+2025-04-30;12:45;Malaga;RYANAIR;FR 9918;0;;"GDN"
