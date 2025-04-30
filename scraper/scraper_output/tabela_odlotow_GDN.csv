@@ -2135,3 +2135,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-01;10:05;Turku;WIZZ AIR;W6 1751;0;;"GDN"
 2025-05-01;10:10;Kopenhaga;SAS;SK 756;0;;"GDN"
 2025-05-01;10:15;Londyn stansted;;RK 544;0;;"GDN"
+2025-05-01;11:15;Bergen;WIZZ AIR;W6 1745;0;;"GDN"
+2025-05-01;11:50;Newcastle;RYANAIR;FR 6103;0;;"GDN"
+2025-05-01;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
+2025-05-01;12:00;Helsinki;FINNAIR;AY 1176;0;;"GDN"
+2025-05-01;12:10;Alesund vigra;WIZZ AIR;W6 1765;0;;"GDN"
