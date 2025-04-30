@@ -858,3 +858,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-30;20:20;Paryż - Beauvais (BVA);Ryanair;FR 5050;0;;"POZ"
 2025-04-30;20:50;Mediolan - Bergamo (BGY);Ryanair;FR 3594;0;;"POZ"
 2025-04-30;22:00;Rzym - Fiumicino (FCO);Wizz Air;W4 6192;0;;"POZ"
+2025-04-30;Godzina;{{ item.airport.label }} ({{ item.airport.value }});null;{{ item.flight_id }};0;;"POZ"
