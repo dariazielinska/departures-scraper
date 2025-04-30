@@ -972,3 +972,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-04-30;03:40;Heraklion;BUZZ;RR 3023;0;;"KTW"
 2025-04-30;05:00;Antalia;ENTER AIR;ENT 1353;0;;"KTW"
 2025-04-30;05:05;Antalia;LOT;LO 6321;0;;"KTW"
+2025-04-30;05:40;Antalia;ELECTRA AIRWAYS;AMQ 320;0;;"KTW"
+2025-04-30;05:40;Warszawa;LOT;LO 3880;0;;"KTW"
+2025-04-30;05:45;Forli;RYANAIR;FR 1036;0;;"KTW"
