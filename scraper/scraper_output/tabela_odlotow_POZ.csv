@@ -913,6 +913,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-01;15:50;Barcelona - Girona (GRO);;FR 5123;0;;"POZ"
 2025-05-01;16:05;Mediolan - Bergamo (BGY);;FR 3594;0;;"POZ"
 2025-05-01;16:30;Bodrum (BJV);;FH 746;0;;"POZ"
+2025-05-01;16:30;Bodrum (BJV);;FHYFH746;0;;"POZ"
 2025-05-01;16:35;Hurghada (HRG);;3Z 7146;0;;"POZ"
 2025-05-01;17:05;Antalya (AYT);;RR 7109;0;;"POZ"
 2025-05-01;18:20;Warszawa (WAW);;LO 3948;0;;"POZ"
