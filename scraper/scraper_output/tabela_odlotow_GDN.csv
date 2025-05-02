@@ -2193,6 +2193,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-02;06:00;Oslo torp;WIZZ AIR;W6 1743;0;;"GDN"
 2025-05-02;06:05;Hamburg;WIZZ AIR;W6 1675;0;;"GDN"
 2025-05-02;06:05;Bergen;WIZZ AIR;W6 1757;0;;"GDN"
+2025-05-02;06:05;Bergen;WIZZ AIR;W61757;0;;"GDN"
 2025-05-02;06:10;Sztokholm arlanda;WIZZ AIR;W6 1731;0;;"GDN"
 2025-05-02;06:20;Amsterdam;KLM;KL 1302;0;;"GDN"
 2025-05-02;06:20;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
@@ -2268,3 +2269,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-02;20:20;Goteborg;WIZZ AIR;W6 1735;0;;"GDN"
 2025-05-02;20:25;Londyn stansted;RYANAIR;FR 592;0;;"GDN"
 2025-05-02;20:30;Helsinki;FINNAIR;AY 1174;0;;"GDN"
+2025-05-02;21:40;Kopenhaga;RYANAIR;FR 6844;0;;"GDN"
