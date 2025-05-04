@@ -2469,3 +2469,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-05;06:05;Bergen;WIZZ AIR;W6 1757;0;;"GDN"
 2025-05-05;06:10;Oslo torp;WIZZ AIR;W6 1743;0;;"GDN"
 2025-05-05;06:15;Wenecja treviso;RYANAIR;FR 1969;0;;"GDN"
+2025-05-05;06:20;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
+2025-05-05;06:20;Mediolan bergamo;RYANAIR;FR 9094;0;;"GDN"
+2025-05-05;06:20;Amsterdam;KLM;KL 1302;0;;"GDN"
+2025-05-05;06:25;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
+2025-05-05;06:40;Stavanger;WIZZ AIR;W6 1747;0;;"GDN"
