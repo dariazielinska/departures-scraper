@@ -4564,3 +4564,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-04;08:05;Sztokholm (ARN);LOT;LO 453;0;;"WAW"
 2025-05-04;08:10;Budapeszt (BUD);Wizz Air;W6 2468;0;;"WAW"
 2025-05-04;08:20;Bodrum (BJV);Smartwings;3Z 7266;0;;"WAW"
+2025-05-04;08:20;Bodrum (BJV);Smartwings;3Z 7202;0;;"WAW"
+2025-05-04;08:25;Heraklion (HER);LOT;LO 6345;0;;"WAW"
+2025-05-04;08:25;Kopenhaga (CPH);LOT;LO 463;0;;"WAW"
+2025-05-04;08:25;Wiedeń (VIE);Austrian;OS 626;0;;"WAW"
