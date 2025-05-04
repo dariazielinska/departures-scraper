@@ -4788,3 +4788,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-04;21:00;Heraklion (HER);Enter Air;ENT7921;0;;"WAW"
 2025-05-04;21:10;Helsinki (HEL);Finnair;AY 1148;0;;"WAW"
 2025-05-04;21:10;Wiedeń (VIE);Ryanair;FR 6065;0;;"WAW"
+2025-05-04;21:15;Kair (CAI);LOT;LO 147;0;;"WAW"
+2025-05-04;21:20;Monastyr (MIR);Nouvelair;BJ 7483;0;;"WAW"
+2025-05-04;21:25;Dubai (DXB);Fly Dubai;FZ 1840;0;;"WAW"
+2025-05-04;21:30;Tbilisi (TBS);LOT;LO 723;0;;"WAW"
+2025-05-04;21:50;Keflavik (KEF);FPY;OG 8505;0;;"WAW"
