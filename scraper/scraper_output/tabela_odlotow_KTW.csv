@@ -1235,3 +1235,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-04;09:45;Bodrum;BUZZ;RR 7241;0;;"KTW"
 2025-05-04;10:00;Marsa Alam;ENTER AIR;ENT 4783;0;;"KTW"
 2025-05-04;10:00;Antalia;ENTER AIR;ENT 7139;0;;"KTW"
+2025-05-04;10:05;Antalia;BUZZ;RR 7231;0;;"KTW"
+2025-05-04;10:10;Frankfurt;LUFTHANSA;LH 1385;0;;"KTW"
