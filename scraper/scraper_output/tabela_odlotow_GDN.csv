@@ -2574,3 +2574,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-06;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
 2025-05-06;12:00;Helsinki;FINNAIR;AY 1176;0;;"GDN"
 2025-05-06;12:00;Warszawa;LOT;LO3836;0;;"GDN"
+2025-05-06;12:10;Alesund vigra;WIZZ AIR;W6 1765;0;;"GDN"
+2025-05-06;12:15;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
+2025-05-06;12:15;Edynburg;RYANAIR;FR 6123;0;;"GDN"
+2025-05-06;12:50;Piza;RYANAIR;FR 4442;0;;"GDN"
