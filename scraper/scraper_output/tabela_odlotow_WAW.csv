@@ -5400,3 +5400,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-07;08:05;Sztokholm (ARN);LOT;LO 453;0;;"WAW"
 2025-05-07;08:10;Budapeszt (BUD);Wizz Air;W6 2468;0;;"WAW"
 2025-05-07;08:15;Stuttgart (STR);LOT;LO 371;0;;"WAW"
+2025-05-07;08:25;Kopenhaga (CPH);LOT;LO 463;0;;"WAW"
+2025-05-07;08:25;Londyn-Heathrow (LHR);British Airways;BA 879;0;;"WAW"
+2025-05-07;08:25;Wiedeń (VIE);Austrian;OS 626;0;;"WAW"
