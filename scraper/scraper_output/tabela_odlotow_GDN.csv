@@ -2977,3 +2977,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-10;21:00;Manchester;RYANAIR;FR 4095;0;;"GDN"
 2025-05-10;21:25;Kraków;RYANAIR;FR 236;0;;"GDN"
 2025-05-10;22:00;Londyn stansted;RYANAIR;FR 592;0;;"GDN"
+2025-05-10;22:25;Antalia;;ENT7061;0;;"GDN"
+2025-05-10;23:00;Ryga;RYANAIR;FR 6370;0;;"GDN"
+2025-05-10;23:00;Bratysława;RYANAIR;FR 6827;0;;"GDN"
