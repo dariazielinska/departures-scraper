@@ -1572,3 +1572,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-10;10:55;Frankfurt;LOT;LO 7356;0;;"KTW"
 2025-05-10;11:35;Londyn - Stansted;RYANAIR;FR 2472;0;;"KTW"
 2025-05-10;11:55;Katania;RYANAIR;FR 6373;0;;"KTW"
+2025-05-10;12:30;Barcelona;WIZZ AIR;W6 1175;0;;"KTW"
+2025-05-10;12:50;Alicante;WIZZ AIR;W6 1075;0;;"KTW"
+2025-05-10;13:00;Warszawa;ENTER AIR;ENT 15;0;;"KTW"
+2025-05-10;13:00;Antalia;ENTER AIR;ENT 7159;0;;"KTW"
