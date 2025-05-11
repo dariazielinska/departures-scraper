@@ -1650,3 +1650,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-11;14:55;Warszawa;LOT;LO 3884;0;;"KTW"
 2025-05-11;16:00;Rennes;ENTER AIR;ENT 585;0;;"KTW"
 2025-05-11;16:00;Heraklion;BUZZ;RR 3091;0;;"KTW"
+2025-05-11;16:00;Dortmund;WIZZ AIR;W6 1093;0;;"KTW"
+2025-05-11;16:20;Alicante;RYANAIR;FR 3596;0;;"KTW"
+2025-05-11;17:00;Dublin;RYANAIR;FR 5347;0;;"KTW"
