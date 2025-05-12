@@ -6760,3 +6760,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-12;08:00;Billund (BLL);LOT;LO 465;0;;"WAW"
 2025-05-12;08:00;Praga (PRG);LOT;LO 523;0;;"WAW"
 2025-05-12;08:05;Sztokholm (ARN);LOT;LO 453;0;;"WAW"
+2025-05-12;08:10;Budapeszt (BUD);Wizz Air;W6 2468;0;;"WAW"
+2025-05-12;08:10;Lyon (LYS);LOT;LO 345;0;;"WAW"
+2025-05-12;08:15;Stuttgart (STR);LOT;LO 371;0;;"WAW"
+2025-05-12;08:20;Teneryfa (TFS);Enter Air;ENT7201;0;;"WAW"
