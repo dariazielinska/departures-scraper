@@ -1681,6 +1681,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-12;22:55;Rzym - Fiumicino (FCO);;W4 6192;0;;"POZ"
 2025-05-13;05:40;Warszawa (WAW);;LO 3942;0;;"POZ"
 2025-05-13;05:45;Antalya (AYT);Enter Air;ENT 4101;0;;"POZ"
+2025-05-13;05:45;Tel Awiw (TLV);Ryanair;FR 9990;0;;"POZ"
 2025-05-13;05:50;Lizbona (LIS);;FR 9575;0;;"POZ"
 2025-05-13;06:00;Paryż - Beauvais (BVA);;FR 5050;0;;"POZ"
 2025-05-13;06:00;Cork (ORK);;FR 7244;0;;"POZ"
