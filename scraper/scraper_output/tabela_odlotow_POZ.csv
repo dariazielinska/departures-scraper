@@ -1762,6 +1762,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-14;13:35;Bristol (BRS);Ryanair;FR 7948;0;;"POZ"
 2025-05-14;13:50;Edynburg (EDI);Ryanair UK;RK 6619;0;;"POZ"
 2025-05-14;13:55;Mediolan - Bergamo (BGY);Ryanair;FR 3868;0;;"POZ"
+2025-05-14;14:00;Warszawa (WAW);;PLF 120;0;;"POZ"
 2025-05-14;14:05;Dubaj (DXB);flydubai;FZ 704;0;;"POZ"
 2025-05-14;14:15;Amsterdam (AMS);KLM;KL 1334;0;;"POZ"
 2025-05-14;14:30;Antalya (AYT);Enter Air;ENT 1505;0;;"POZ"
