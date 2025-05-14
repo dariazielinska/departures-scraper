@@ -1757,6 +1757,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-14;10:40;Frankfurt (FRA);Lufthansa;LH 1387;0;;"POZ"
 2025-05-14;11:25;Londyn - Luton (LTN);Wizz Air;W9 5390;0;;"POZ"
 2025-05-14;11:30;Antalya (AYT);PLL LOT;LO 7007;0;;"POZ"
+2025-05-14;11:30;Antalya (AYT);PLL LOT;LO 7006;0;;"POZ"
 2025-05-14;12:00;Warszawa (WAW);PLL LOT;LO 3946;0;;"POZ"
 2025-05-14;12:25;Birmingham (BHX);Ryanair;FR 5073;0;;"POZ"
 2025-05-14;13:35;Bristol (BRS);Ryanair;FR 7948;0;;"POZ"
