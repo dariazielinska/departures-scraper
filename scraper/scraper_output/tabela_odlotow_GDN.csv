@@ -3427,3 +3427,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-15;21:30;Warszawa;LOT;LO3826;0;;"GDN"
 2025-05-15;21:45;Mediolan bergamo;RYANAIR;FR 3279;0;;"GDN"
 2025-05-15;21:50;Oslo gardermoen;Norwegian;DY 1055;0;;"GDN"
+2025-05-15;22:10;Kopenhaga;RYANAIR;FR 6844;0;;"GDN"
+2025-05-15;22:40;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
+2025-05-15;23:00;Manchester;RYANAIR;FR 4095;0;;"GDN"
