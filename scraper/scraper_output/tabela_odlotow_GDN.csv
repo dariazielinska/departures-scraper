@@ -3438,6 +3438,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-16;05:50;Barcelona el prat;RYANAIR;FR 334;0;;"GDN"
 2025-05-16;06:00;Monachium;LUFTHANSA;LH 1647;0;;"GDN"
 2025-05-16;06:00;Kopenhaga;SAS;SK 1758;0;;"GDN"
+2025-05-16;06:00;Oslo torp;WIZZ AIR;W6 1743;0;;"GDN"
 2025-05-16;06:05;Bergen;WIZZ AIR;W6 1757;0;;"GDN"
 2025-05-16;06:10;Sztokholm arlanda;WIZZ AIR;W6 1731;0;;"GDN"
 2025-05-16;06:20;Amsterdam;KLM;KL 1302;0;;"GDN"
@@ -3459,3 +3460,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-16;10:10;Rodos;;ENT7115;0;;"GDN"
 2025-05-16;10:10;Kopenhaga;SAS;SK 756;0;;"GDN"
 2025-05-16;10:55;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
+2025-05-16;11:15;Bergen;WIZZ AIR;W6 1745;0;;"GDN"
+2025-05-16;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
