@@ -3556,3 +3556,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-17;11:50;Marsa alam;;ENT7547;0;;"GDN"
 2025-05-17;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
 2025-05-17;11:55;Helsinki;FINNAIR;AY 1176;0;;"GDN"
+2025-05-17;12:10;Warszawa;LOT;LO3836;0;;"GDN"
+2025-05-17;12:10;Haugesund;WIZZ AIR;W6 1749;0;;"GDN"
+2025-05-17;12:30;Aarhus;RYANAIR;FR 4970;0;;"GDN"
