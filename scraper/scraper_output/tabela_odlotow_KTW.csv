@@ -1902,3 +1902,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-16;04:50;Izmir;LOT;LO 6133;0;;"KTW"
 2025-05-16;05:20;Rodos;ENTER AIR;ENT 4085;0;;"KTW"
 2025-05-16;05:40;Warszawa;LOT;LO 3880;0;;"KTW"
+2025-05-16;05:45;Mediolan - Bergamo;RYANAIR;FR 3491;0;;"KTW"
+2025-05-16;05:50;Dublin;RYANAIR;FR 5347;0;;"KTW"
+2025-05-16;05:55;Pula;RYANAIR;FR 9409;0;;"KTW"
