@@ -3991,3 +3991,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-22;08:40;Antalia;;PC 6292;0;;"GDN"
 2025-05-22;08:45;Warszawa;LOT;LO3832;0;;"GDN"
 2025-05-22;08:50;Bratysława;RYANAIR;FR 6827;0;;"GDN"
+2025-05-22;09:40;Leeds;RYANAIR;FR 1504;0;;"GDN"
+2025-05-22;09:40;Wrocław;RYANAIR;FR 4106;0;;"GDN"
+2025-05-22;10:05;Haugesund;WIZZ AIR;W6 1749;0;;"GDN"
+2025-05-22;10:05;Turku;WIZZ AIR;W6 1751;0;;"GDN"
