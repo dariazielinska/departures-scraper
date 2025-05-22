@@ -4107,3 +4107,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-23;13:35;Brindisi;RYANAIR;FR 3521;0;;"GDN"
 2025-05-23;13:35;Hamburg;RYANAIR;FR 6119;0;;"GDN"
 2025-05-23;14:05;Rodos;;3Z 7474;0;;"GDN"
+2025-05-23;14:20;Amsterdam;KLM;KL 1306;0;;"GDN"
+2025-05-23;14:25;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
+2025-05-23;14:25;Frankfurt;LUFTHANSA;LH 1379;0;;"GDN"
+2025-05-23;14:35;Kraków;RYANAIR;FR 236;0;;"GDN"
+2025-05-23;14:50;Warszawa;LOT;LO3838;0;;"GDN"
