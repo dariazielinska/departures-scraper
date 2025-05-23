@@ -2376,3 +2376,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-23;20:25;Londyn - Stansted (STN);Ryanair;FR 2337;0;;"POZ"
 2025-05-23;20:30;Mediolan - Bergamo (BGY);Ryanair;FR 3594;0;;"POZ"
 2025-05-23;22:40;Rzym - Fiumicino (FCO);Wizz Air;W4 6192;0;;"POZ"
+2025-05-23;Godzina;{{ item.airport.label }} ({{ item.airport.value }});null;{{ item.flight_id }};0;;"POZ"
