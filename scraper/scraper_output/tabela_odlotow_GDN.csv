@@ -4498,6 +4498,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-27;20:40;Stavanger;WIZZ AIR;W6 1747;0;;"GDN"
 2025-05-27;21:25;Warszawa;LOT;LO3826;0;;"GDN"
 2025-05-27;22:15;Kraków;RYANAIR;FR 236;0;;"GDN"
+2025-05-27;23:25;Manchester;;RK 4095;0;;"GDN"
+2025-05-27;23:35;Sztokholm arlanda;RYANAIR;FR 6099;0;;"GDN"
 2025-05-28;05:40;Warszawa;LOT;LO3828;0;;"GDN"
 2025-05-28;05:45;Leeds;WIZZ AIR;W6 1615;0;;"GDN"
 2025-05-28;06:00;Monachium;LUFTHANSA;LH 1647;0;;"GDN"
