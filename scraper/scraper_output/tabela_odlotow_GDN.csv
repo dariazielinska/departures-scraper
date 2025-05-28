@@ -4640,6 +4640,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-29;11:50;Antalia;;ENT7553;0;;"GDN"
 2025-05-29;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
 2025-05-29;11:50;Korfu;;RR 5051;0;;"GDN"
+2025-05-29;11:50;Newcastle;RYANAIR;FR 6103;0;;"GDN"
+2025-05-29;11:55;Helsinki;FINNAIR;AY 1176;0;;"GDN"
 2025-05-29;12:00;Lulea;;ENT599;0;;"GDN"
 2025-05-29;12:00;Warszawa;LOT;LO3836;0;;"GDN"
 2025-05-29;12:25;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
