@@ -4762,3 +4762,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-30;14:25;Frankfurt;LUFTHANSA;LH 1379;0;;"GDN"
 2025-05-30;14:35;Kraków;RYANAIR;FR 236;0;;"GDN"
 2025-05-30;14:50;Warszawa;LOT;LO3838;0;;"GDN"
+2025-05-30;15:30;Hamburg;WIZZ AIR;W6 1675;0;;"GDN"
+2025-05-30;15:40;Kopenhaga;SAS;SK 760;0;;"GDN"
+2025-05-30;16:05;Oslo gardermoen;WIZZ AIR;W6 1783;0;;"GDN"
