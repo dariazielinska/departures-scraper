@@ -4742,3 +4742,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-30;09:25;Zurych;;LX 1381;0;;"GDN"
 2025-05-30;09:35;Leeds;RYANAIR;FR 1504;0;;"GDN"
 2025-05-30;10:05;Paryż beauvais;WIZZ AIR;W6 1631;0;;"GDN"
+2025-05-30;10:10;Rodos;;ENT7115;0;;"GDN"
+2025-05-30;10:10;Kopenhaga;SAS;SK 756;0;;"GDN"
+2025-05-30;10:55;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
