@@ -2789,6 +2789,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-29;15:50;Barcelona - Girona (GRO);Ryanair;FR 5123;0;;"POZ"
 2025-05-29;16:05;Mediolan - Bergamo (BGY);Ryanair;FR 3594;0;;"POZ"
 2025-05-29;16:30;Bodrum (BJV);;FH 746;0;;"POZ"
+2025-05-29;16:30;Bodrum (BJV);Freebird Airlines;FHY FH746;0;;"POZ"
 2025-05-29;16:35;Hurghada (HRG);Travel Service;3Z 7146;0;;"POZ"
 2025-05-29;17:05;Antalya (AYT);Buzz / Ryanair Sun;RR 7109;0;;"POZ"
 2025-05-29;17:50;Kefalonia (EFL);Buzz / Ryanair Sun;RR 3041;0;;"POZ"
