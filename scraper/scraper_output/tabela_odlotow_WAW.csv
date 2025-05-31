@@ -12019,4 +12019,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-05-31;08:00;Praga (PRG);LOT;LO 523;0;;"WAW"
 2025-05-31;08:00;Wilno (VNO);LOT;LO 777;0;;"WAW"
 2025-05-31;08:00;Billund (BLL);LOT;LO 465;0;;"WAW"
+2025-05-31;08:00;Kos (KGS);LOT;LO 6355;0;;"WAW"
+2025-05-31;08:00;Samos (SMI);LOT;LO 6853;0;;"WAW"
 2025-05-31;08:05;Sztokholm (ARN);LOT;LO 453;0;;"WAW"
