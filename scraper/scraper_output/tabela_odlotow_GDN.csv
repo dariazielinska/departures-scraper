@@ -5050,3 +5050,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-02;11:55;Helsinki;FINNAIR;AY 1176;0;;"GDN"
 2025-06-02;11:55;Wrocław;RYANAIR;FR 4106;0;;"GDN"
 2025-06-02;12:00;Warszawa;LOT;LO3836;0;;"GDN"
+2025-06-02;12:25;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
+2025-06-02;12:40;Sharm el sheikh;;U57227;0;;"GDN"
+2025-06-02;12:50;Bergen;Norwegian;DY 1031;0;;"GDN"
+2025-06-02;13:05;Oslo gardermoen;Norwegian;DY 1053;0;;"GDN"
