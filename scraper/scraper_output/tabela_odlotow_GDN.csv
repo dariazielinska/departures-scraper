@@ -5091,6 +5091,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-02;16:10;Hamburg;RYANAIR;FR 6119;0;;"GDN"
 2025-06-02;16:40;Malaga;WIZZ AIR;W6 1613;0;;"GDN"
 2025-06-02;16:55;Monachium;LUFTHANSA;LH 1645;0;;"GDN"
+2025-06-02;17:25;Abu zabi;WIZZ AIR;W6 405;0;;"GDN"
 2025-06-02;17:40;Hurghada;;ENT7935;0;;"GDN"
 2025-06-02;18:00;Aberdeen;WIZZ AIR;W6 1617;0;;"GDN"
 2025-06-02;18:05;Frankfurt;LUFTHANSA;LH 1381;0;;"GDN"
@@ -5128,3 +5129,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-03;07:00;Ryga;RYANAIR;FR 6370;0;;"GDN"
 2025-06-03;07:10;Trondheim;WIZZ AIR;W6 1761;0;;"GDN"
 2025-06-03;07:15;Dortmund;WIZZ AIR;W6 1661;0;;"GDN"
+2025-06-03;07:30;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
