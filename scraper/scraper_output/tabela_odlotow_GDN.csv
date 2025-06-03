@@ -5191,6 +5191,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-04;02:50;Heraklion;;ENT7945;0;;"GDN"
 2025-06-04;05:40;Warszawa;LOT;LO3828;0;;"GDN"
 2025-06-04;05:45;Leeds;WIZZ AIR;W6 1615;0;;"GDN"
+2025-06-04;05:45;Barcelona el prat;RYANAIR;FR 334;0;;"GDN"
+2025-06-04;05:45;Cork;RYANAIR;FR 8782;0;;"GDN"
 2025-06-04;06:00;Monachium;LUFTHANSA;LH 1647;0;;"GDN"
 2025-06-04;06:00;Kopenhaga;SAS;SK 1758;0;;"GDN"
 2025-06-04;06:00;Reykjavik keflavik;WIZZ AIR;W6 1773;0;;"GDN"
