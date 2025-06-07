@@ -5615,3 +5615,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-07;20:05;Dusseldorf;EUROWINGS;EW 9737;0;;"GDN"
 2025-06-07;20:25;Oslo torp;RYANAIR;FR 3277;0;;"GDN"
 2025-06-07;20:40;Stavanger;WIZZ AIR;W6 1747;0;;"GDN"
+2025-06-07;21:00;Manchester;RYANAIR;FR 4095;0;;"GDN"
+2025-06-07;21:25;Kraków;RYANAIR;FR 236;0;;"GDN"
+2025-06-07;21:25;Warszawa;LOT;LO3826;0;;"GDN"
+2025-06-07;22:00;Londyn stansted;RYANAIR;FR 592;0;;"GDN"
