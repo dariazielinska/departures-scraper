@@ -3427,3 +3427,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-09;08:30;Antalia;LOT;LO 6287;0;;"KTW"
 2025-06-09;09:40;Rodos;BUZZ;RR 3005;0;;"KTW"
 2025-06-09;10:10;Bari;RYANAIR;FR 3942;0;;"KTW"
+2025-06-09;10:10;Frankfurt;LUFTHANSA;LH 1385;0;;"KTW"
+2025-06-09;10:50;Eindhoven;WIZZ AIR;W6 1071;0;;"KTW"
