@@ -6554,3 +6554,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-17;08:45;Warszawa;LOT;LO3832;0;;"GDN"
 2025-06-17;08:55;Izmir;;ENT4107;0;;"GDN"
 2025-06-17;09:05;Burgas;;ENT7007;0;;"GDN"
+2025-06-17;09:55;Bristol;RYANAIR;FR 8255;0;;"GDN"
+2025-06-17;10:05;Kos;;RR 5043;0;;"GDN"
+2025-06-17;10:05;Turku;WIZZ AIR;W6 1751;0;;"GDN"
