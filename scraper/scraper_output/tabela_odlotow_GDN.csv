@@ -6655,3 +6655,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-18;08:15;Zadar;RYANAIR;FR 8677;0;;"GDN"
 2025-06-18;08:20;Antalia;;ENT1205;0;;"GDN"
 2025-06-18;08:45;Warszawa;LOT;LO3832;0;;"GDN"
+2025-06-18;09:50;Paryż beauvais;WIZZ AIR;W6 1631;0;;"GDN"
+2025-06-18;09:50;Dortmund;WIZZ AIR;W6 1663;0;;"GDN"
+2025-06-18;10:10;Kopenhaga;SAS;SK 756;0;;"GDN"
