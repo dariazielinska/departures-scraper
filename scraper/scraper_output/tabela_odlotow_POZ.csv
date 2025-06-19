@@ -4389,3 +4389,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-19;20:25;Cagliari (CAG);Ryanair;FR 7220;0;;"POZ"
 2025-06-19;20:30;Londyn - Stansted (STN);Ryanair;FR 2337;0;;"POZ"
 2025-06-19;21:05;Malaga (AGP);Ryanair;FR 6215;0;;"POZ"
+2025-06-19;Godzina;{{ item.airport.label }} ({{ item.airport.value }});null;{{ item.flight_id }};0;;"POZ"
