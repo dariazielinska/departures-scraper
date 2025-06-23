@@ -4734,3 +4734,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-23;20:30;Hurghada (HRG);Air Cairo;SM 3614;0;;"POZ"
 2025-06-23;21:15;Cagliari (CAG);Ryanair;FR 7220;0;;"POZ"
 2025-06-23;22:55;Rzym - Fiumicino (FCO);Wizz Air;W4 6192;0;;"POZ"
+2025-06-23;Godzina;{{ item.airport.label }} ({{ item.airport.value }});null;{{ item.flight_id }};0;;"POZ"
