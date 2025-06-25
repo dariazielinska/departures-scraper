@@ -4578,3 +4578,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-25;14:20;Antalia;ENTER AIR;ENT 7065;0;;"KTW"
 2025-06-25;14:45;Frankfurt;AIR DOLOMITI;EN 8761;0;;"KTW"
 2025-06-25;15:00;Mediolan - Bergamo;RYANAIR;FR 3412;0;;"KTW"
+2025-06-25;15:10;Warszawa;LOT;LO 3884;0;;"KTW"
+2025-06-25;15:45;Londyn - Stansted;RYANAIR;FR 2472;0;;"KTW"
+2025-06-25;15:45;Oslo Gardermoen;RYANAIR;FR 7100;0;;"KTW"
