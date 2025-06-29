@@ -7870,3 +7870,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-30;12:00;Warszawa;LOT;LO3836;0;;"GDN"
 2025-06-30;12:45;Rzym ciampino;RYANAIR;FR 9922;0;;"GDN"
 2025-06-30;12:50;Split;WIZZ AIR;W6 1795;0;;"GDN"
+2025-06-30;13:00;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
+2025-06-30;13:05;Oslo gardermoen;Norwegian;DY 1053;0;;"GDN"
+2025-06-30;13:10;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
+2025-06-30;13:30;Londyn stansted;RYANAIR;FR 532;0;;"GDN"
