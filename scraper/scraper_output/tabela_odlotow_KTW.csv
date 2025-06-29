@@ -4830,3 +4830,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-06-29;10:05;Antalia;BUZZ;RR 7231;0;;"KTW"
 2025-06-29;10:10;Frankfurt;LUFTHANSA;LH 1385;0;;"KTW"
 2025-06-29;10:20;Bari;RYANAIR;FR 3942;0;;"KTW"
+2025-06-29;10:25;Mediolan - Bergamo;RYANAIR;FR 3409;0;;"KTW"
+2025-06-29;10:40;Katania;RYANAIR;FR 6373;0;;"KTW"
+2025-06-29;10:40;Antalia;BUZZ;RR 7245;0;;"KTW"
