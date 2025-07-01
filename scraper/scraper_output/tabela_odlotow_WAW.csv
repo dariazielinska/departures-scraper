@@ -21202,3 +21202,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-01;08:00;Billund (BLL);LOT;LO 465;0;;"WAW"
 2025-07-01;08:00;Marsa-Alam (RMF);LOT;LO 6283;0;;"WAW"
 2025-07-01;08:00;Praga (PRG);LOT;LO 523;0;;"WAW"
+2025-07-01;08:00;Wilno (VNO);LOT;LO 777;0;;"WAW"
+2025-07-01;08:05;Burgas (BOJ);LOT;LO 6383;0;;"WAW"
+2025-07-01;08:05;Sztokholm (ARN);LOT;LO 453;0;;"WAW"
+2025-07-01;08:10;Budapeszt (BUD);Wizz Air;W6 2468;0;;"WAW"
+2025-07-01;08:10;Burgas (BOJ);Enter Air;ENT4851;0;;"WAW"
