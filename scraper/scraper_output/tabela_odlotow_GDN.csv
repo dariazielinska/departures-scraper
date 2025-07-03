@@ -8211,6 +8211,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-03;21:25;Warszawa;LOT;LO3826;0;;"GDN"
 2025-07-03;21:55;Oslo gardermoen;Norwegian;DY 1055;0;;"GDN"
 2025-07-03;22:40;Kopenhaga;RYANAIR;FR 6844;0;;"GDN"
+2025-07-03;22:40;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
+2025-07-03;23:00;Manchester;RYANAIR;FR 4095;0;;"GDN"
 2025-07-04;00:45;Bodrum;;PC 6290;0;;"GDN"
 2025-07-04;03:20;Antalia;;ENT7199;0;;"GDN"
 2025-07-04;05:40;Warszawa;LOT;LO3828;0;;"GDN"
