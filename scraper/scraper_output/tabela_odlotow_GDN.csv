@@ -8504,6 +8504,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-06;12:00;Newcastle;RYANAIR;FR 6103;0;;"GDN"
 2025-07-06;12:05;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
 2025-07-06;12:10;Haugesund;WIZZ AIR;W6 1749;0;;"GDN"
+2025-07-06;12:10;Wrocław;RYANAIR;FR 4106;0;;"GDN"
+2025-07-06;12:25;Hamburg;RYANAIR;FR 6119;0;;"GDN"
 2025-07-06;13:00;Teneryfa południe;WIZZ AIR;W6 1709;0;;"GDN"
 2025-07-06;13:10;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
 2025-07-06;14:15;Marsa alam;;ENT4067;0;;"GDN"
