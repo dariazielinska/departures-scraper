@@ -8624,3 +8624,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-07;20:25;Heraklion;;RR 3097;0;;"GDN"
 2025-07-07;20:30;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
 2025-07-07;20:35;Helsinki;FINNAIR;AY 1174;0;;"GDN"
+2025-07-07;21:25;Warszawa;LOT;LO3826;0;;"GDN"
+2025-07-07;21:50;Goteborg;RYANAIR;FR 6095;0;;"GDN"
+2025-07-07;22:05;Oslo gardermoen;Norwegian;DY 1055;0;;"GDN"
