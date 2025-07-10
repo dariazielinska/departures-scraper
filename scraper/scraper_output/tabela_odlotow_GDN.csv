@@ -9053,3 +9053,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-11;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
 2025-07-11;12:00;Warszawa;LOT;LO3836;0;;"GDN"
 2025-07-11;12:05;Dalaman;;3Z 7534;0;;"GDN"
+2025-07-11;12:50;Neapol;RYANAIR;FR 1896;0;;"GDN"
+2025-07-11;12:50;Burgas;;RR 5125;0;;"GDN"
+2025-07-11;12:50;Split;WIZZ AIR;W6 1795;0;;"GDN"
