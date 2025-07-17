@@ -6146,3 +6146,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-17;14:15;Tivat;ENTER AIR;ENT 5551;0;;"KTW"
 2025-07-17;14:45;Monastyr;NOUVELAIR;BJ 7473;0;;"KTW"
 2025-07-17;14:45;Frankfurt;AIR DOLOMITI;EN 8761;0;;"KTW"
+2025-07-17;14:55;Warszawa;LOT;LO 3884;0;;"KTW"
+2025-07-17;15:25;Dublin;RYANAIR;FR 5347;0;;"KTW"
+2025-07-17;15:30;Londyn - Stansted;RYANAIR;FR 2472;0;;"KTW"
