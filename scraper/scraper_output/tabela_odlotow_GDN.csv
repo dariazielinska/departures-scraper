@@ -9735,3 +9735,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-18;06:20;Amsterdam;KLM;KL 1302;0;;"GDN"
 2025-07-18;06:20;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
 2025-07-18;06:25;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
+2025-07-18;06:40;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
+2025-07-18;07:10;Aberdeen;WIZZ AIR;W6 1617;0;;"GDN"
+2025-07-18;07:15;Dortmund;WIZZ AIR;W6 1661;0;;"GDN"
+2025-07-18;07:20;Goteborg;RYANAIR;FR 6095;0;;"GDN"
