@@ -10662,6 +10662,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-27;06:25;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
 2025-07-27;06:40;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
 2025-07-27;06:50;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
+2025-07-27;06:50;Sztokholm arlanda;RYANAIR;RYR4617;0;;"GDN"
 2025-07-27;07:10;Trondheim;WIZZ AIR;W6 1761;0;;"GDN"
 2025-07-27;07:15;Dortmund;WIZZ AIR;W6 1661;0;;"GDN"
 2025-07-27;08:40;Antalia;;PC 6292;0;;"GDN"
@@ -10717,3 +10718,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-27;20:30;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
 2025-07-27;20:45;Helsinki;FINNAIR;AY 1174;0;;"GDN"
 2025-07-27;21:25;Warszawa;LOT;LO3826;0;;"GDN"
+2025-07-27;21:50;Goteborg;RYANAIR;FR 6095;0;;"GDN"
+2025-07-27;22:05;Oslo gardermoen;Norwegian;DY 1055;0;;"GDN"
