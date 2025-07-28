@@ -10776,6 +10776,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-28;10:55;Zadar;RYANAIR;FR 8677;0;;"GDN"
 2025-07-28;11:00;Oslo torp;RYANAIR;FR 3277;0;;"GDN"
 2025-07-28;11:15;Bergen;WIZZ AIR;W6 1745;0;;"GDN"
+2025-07-28;11:20;Warszawa;;ENT128F;0;;"GDN"
 2025-07-28;11:30;Kopenhaga;RYANAIR;FR 6844;0;;"GDN"
 2025-07-28;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
 2025-07-28;11:55;Wrocław;RYANAIR;FR 4106;0;;"GDN"
@@ -10824,4 +10825,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-28;22:50;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
 2025-07-29;00:45;Antalia;;PC 6272;0;;"GDN"
 2025-07-29;02:10;Zakynthos;;RR 3117;0;;"GDN"
+2025-07-29;02:30;Warna;;ENT7021;0;;"GDN"
 2025-07-29;15:40;Marsa alam;;ENT7225;0;;"GDN"
