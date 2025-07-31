@@ -7157,3 +7157,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-07-31;14:45;Frankfurt;AIR DOLOMITI;EN 8761;0;;"KTW"
 2025-07-31;14:55;Warszawa;LOT;LO 3884;0;;"KTW"
 2025-07-31;15:25;Dublin;RYANAIR;FR 5347;0;;"KTW"
+2025-07-31;15:30;Londyn - Stansted;RYANAIR;FR 2472;0;;"KTW"
+2025-07-31;15:50;Kalamata;BUZZ;RR 3049;0;;"KTW"
+2025-07-31;16:00;Manchester;RYANAIR;FR 6403;0;;"KTW"
