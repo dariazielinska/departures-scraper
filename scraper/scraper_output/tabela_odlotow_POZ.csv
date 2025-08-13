@@ -8981,3 +8981,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-08-13;Godzina;Chania (CHQ);Ryanair;FR 4603;0;;"POZ"
 2025-08-13;Godzina;Rzym - Fiumicino (FCO);Wizz Air;W4 6192;0;;"POZ"
 2025-08-13;Godzina;{{ item.airport.label }} ({{ item.airport.value }});null;{{ item.flight_id }};0;;"POZ"
+2025-08-13;12:30;Katowice (KTW);Enter Air;ENT 688P;0;;"POZ"
+2025-08-13;15:15;Frankfurt (FRA);Lufthansa;LH 9917;0;;"POZ"
