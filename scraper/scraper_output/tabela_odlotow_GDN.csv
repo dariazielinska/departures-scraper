@@ -12677,6 +12677,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-08-16;00:35;Tirana;;RR 5093;0;;"GDN"
 2025-08-16;00:45;Antalia;;PC 6272;0;;"GDN"
 2025-08-16;02:30;Antalia;;RR 5111;0;;"GDN"
+2025-08-16;03:00;Kopenhaga;;ENT522P;0;;"GDN"
 2025-08-16;03:55;Kos;;ENT7759;0;;"GDN"
 2025-08-16;05:40;Warszawa;LOT;LO3828;0;;"GDN"
 2025-08-16;05:45;Londyn stansted;RYANAIR;FR 544;0;;"GDN"
@@ -12714,3 +12715,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-08-16;12:00;Warszawa;LOT;LO3836;0;;"GDN"
 2025-08-16;12:05;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
 2025-08-16;12:10;Haugesund;WIZZ AIR;W6 1749;0;;"GDN"
+2025-08-16;13:00;Teneryfa południe;WIZZ AIR;W6 1709;0;;"GDN"
+2025-08-16;13:10;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
