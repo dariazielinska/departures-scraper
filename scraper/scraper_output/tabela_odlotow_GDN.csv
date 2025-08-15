@@ -12667,3 +12667,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-08-15;20:20;Goteborg;WIZZ AIR;W6 1735;0;;"GDN"
 2025-08-15;20:25;Londyn stansted;RYANAIR;FR 592;0;;"GDN"
 2025-08-15;20:30;Helsinki;FINNAIR;AY 1174;0;;"GDN"
+2025-08-15;21:20;Rzeszów;LOT;LO3515;0;;"GDN"
+2025-08-15;21:40;Kopenhaga;RYANAIR;FR 6844;0;;"GDN"
+2025-08-15;21:55;Oslo gardermoen;Norwegian;DY 1055;0;;"GDN"
