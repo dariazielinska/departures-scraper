@@ -9501,3 +9501,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-08-19;20:15;Warna (VAR);Buzz / Ryanair Sun;RR 7049;0;;"POZ"
 2025-08-19;20:20;Liverpool (LPL);Ryanair;FR 7425;0;;"POZ"
 2025-08-19;21:45;Zadar (ZAD);Ryanair;FR 7252;0;;"POZ"
+2025-08-19;Godzina;{{ item.airport.label }} ({{ item.airport.value }});null;{{ item.flight_id }};0;;"POZ"
