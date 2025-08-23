@@ -13486,6 +13486,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-08-23;13:10;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
 2025-08-23;14:15;Marsa alam;;ENT4067;0;;"GDN"
 2025-08-23;14:20;Antalia;;4M 880;0;;"GDN"
+2025-08-23;14:20;Antalia;;4M880;0;;"GDN"
 2025-08-23;14:25;Frankfurt;LUFTHANSA;LH 1379;0;;"GDN"
 2025-08-23;14:25;Kopenhaga;SAS;SK 760;0;;"GDN"
 2025-08-23;14:35;Stavanger;WIZZ AIR;W6 1747;0;;"GDN"
