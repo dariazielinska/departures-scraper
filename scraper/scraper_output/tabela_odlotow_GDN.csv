@@ -13807,6 +13807,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-08-26;14:20;Amsterdam;KLM;KL 1306;0;;"GDN"
 2025-08-26;14:30;Frankfurt;LUFTHANSA;LH 1379;0;;"GDN"
 2025-08-26;14:35;Stavanger;WIZZ AIR;W6 1747;0;;"GDN"
+2025-08-26;14:35;Stavanger;WIZZ AIR;W6 1747B;0;;"GDN"
 2025-08-26;14:40;Kopenhaga;RYANAIR;FR 6844;0;;"GDN"
 2025-08-26;14:45;Rzym ciampino;RYANAIR;FR 9922;0;;"GDN"
 2025-08-26;14:50;Warszawa;LOT;LO3838;0;;"GDN"
@@ -13858,3 +13859,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-08-27;06:40;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
 2025-08-27;07:10;Billund;WIZZ AIR;W6 1777;0;;"GDN"
 2025-08-27;07:15;Dortmund;WIZZ AIR;W6 1661;0;;"GDN"
+2025-08-27;07:20;Goteborg;RYANAIR;FR 6095;0;;"GDN"
+2025-08-27;07:35;Manchester;RYANAIR;FR 4095;0;;"GDN"
