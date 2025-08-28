@@ -14095,3 +14095,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-08-29;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
 2025-08-29;12:00;Warszawa;LOT;LO3836;0;;"GDN"
 2025-08-29;12:05;Dalaman;;3Z 7534;0;;"GDN"
+2025-08-29;12:50;Bergen;Norwegian;DY 1031;0;;"GDN"
+2025-08-29;12:50;Neapol;RYANAIR;FR 1896;0;;"GDN"
+2025-08-29;12:50;Burgas;;RR 5125;0;;"GDN"
+2025-08-29;12:50;Split;WIZZ AIR;W6 1795;0;;"GDN"
+2025-08-29;13:00;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
