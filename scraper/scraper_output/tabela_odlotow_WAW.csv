@@ -40271,3 +40271,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-09-03;07:40;Palermo (PMO);LOT;LO 6627;0;;"WAW"
 2025-09-03;07:50;Budapeszt (BUD);LOT;LO 533;0;;"WAW"
 2025-09-03;07:55;Oslo (OSL);LOT;LO 481;0;;"WAW"
+2025-09-03;08:00;Billund (BLL);LOT;LO 465;0;;"WAW"
+2025-09-03;08:00;Praga (PRG);LOT;LO 523;0;;"WAW"
+2025-09-03;08:00;Wilno (VNO);LOT;LO 777;0;;"WAW"
