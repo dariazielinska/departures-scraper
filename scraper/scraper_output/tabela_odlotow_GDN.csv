@@ -14950,3 +14950,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-09-06;21:25;Kraków;RYANAIR;FR 236;0;;"GDN"
 2025-09-06;21:25;Warszawa;LOT;LO3826;0;;"GDN"
 2025-09-06;22:00;Londyn stansted;RYANAIR;FR 592;0;;"GDN"
+2025-09-06;23:00;Ryga;RYANAIR;FR 6370;0;;"GDN"
+2025-09-06;23:10;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
+2025-09-06;23:35;Bratysława;RYANAIR;FR 6827;0;;"GDN"
