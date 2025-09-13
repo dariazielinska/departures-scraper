@@ -15676,6 +15676,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-09-13;23:35;Bratysława;RYANAIR;FR 6827;0;;"GDN"
 2025-09-14;00:35;Tirana;;RR 5093;0;;"GDN"
 2025-09-14;00:45;Bodrum;;PC 6290;0;;"GDN"
+2025-09-14;02:30;Zakynthos;;RR 3103;0;;"GDN"
+2025-09-14;02:45;Heraklion;;ENT7313;0;;"GDN"
 2025-09-14;05:40;Warszawa;LOT;LO3828;0;;"GDN"
 2025-09-14;05:45;Londyn stansted;RYANAIR;FR 544;0;;"GDN"
 2025-09-14;05:45;Lublin;RYANAIR;FR 6111;0;;"GDN"
