@@ -16207,6 +16207,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-09-18;19:40;Enfidha-hammamet;;ENT7067;0;;"GDN"
 2025-09-18;20:10;Pafos;RYANAIR;FR 3553;0;;"GDN"
 2025-09-18;20:10;Oslo torp;RYANAIR;FR 4942;0;;"GDN"
+2025-09-18;20:15;Shannon;;CMB588;0;;"GDN"
 2025-09-18;20:20;Goteborg;WIZZ AIR;W6 1735;0;;"GDN"
 2025-09-18;21:05;Hurghada;;SM3604;0;;"GDN"
 2025-09-18;21:25;Monastyr;;BJ7407;0;;"GDN"
@@ -16233,3 +16234,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-09-19;06:40;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
 2025-09-19;07:10;Aberdeen;WIZZ AIR;W6 1617;0;;"GDN"
 2025-09-19;07:15;Dortmund;WIZZ AIR;W6 1661;0;;"GDN"
+2025-09-19;07:20;Goteborg;RYANAIR;FR 6095;0;;"GDN"
+2025-09-19;08:05;Wrocław;RYANAIR;FR 4106;0;;"GDN"
