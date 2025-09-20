@@ -16459,3 +16459,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-09-21;09:40;Barcelona el prat;RYANAIR;FR 334;0;;"GDN"
 2025-09-21;10:05;Haugesund;WIZZ AIR;W6 1749;0;;"GDN"
 2025-09-21;10:05;Turku;WIZZ AIR;W6 1751;0;;"GDN"
+2025-09-21;10:10;Kopenhaga;SAS;SK 756;0;;"GDN"
+2025-09-21;10:20;Brindisi;RYANAIR;FR 3521;0;;"GDN"
+2025-09-21;11:05;Palma de mallorca;;ENT7541;0;;"GDN"
