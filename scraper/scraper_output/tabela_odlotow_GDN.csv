@@ -17483,3 +17483,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-01;12:00;Warszawa;LOT;LO3836;0;;"GDN"
 2025-10-01;12:20;Hamburg;WIZZ AIR;W6 1675;0;;"GDN"
 2025-10-01;12:30;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
+2025-10-01;13:05;Oslo gardermoen;Norwegian;DY 1053;0;;"GDN"
+2025-10-01;13:10;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
+2025-10-01;13:35;Aarhus;RYANAIR;FR 4970;0;;"GDN"
+2025-10-01;13:45;Praga;RYANAIR;FR 1920;0;;"GDN"
