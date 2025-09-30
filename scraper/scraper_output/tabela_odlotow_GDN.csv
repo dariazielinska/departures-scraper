@@ -17448,6 +17448,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-09-30;23:25;Manchester;;RK 4095;0;;"GDN"
 2025-09-30;23:35;Sztokholm arlanda;RYANAIR;FR 6099;0;;"GDN"
 2025-10-01;00:45;Antalia;;PC 6272;0;;"GDN"
+2025-10-01;01:10;Rzym fiumicino;WIZZ AIR;W6 810;0;;"GDN"
 2025-10-01;02:50;Heraklion;;ENT7945;0;;"GDN"
 2025-10-01;05:40;Warszawa;LOT;LO3828;0;;"GDN"
 2025-10-01;05:45;Alicante;RYANAIR;FR 1425;0;;"GDN"
@@ -17480,3 +17481,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-01;11:25;Malta;RYANAIR;FR 5208;0;;"GDN"
 2025-10-01;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
 2025-10-01;12:00;Warszawa;LOT;LO3836;0;;"GDN"
+2025-10-01;12:20;Hamburg;WIZZ AIR;W6 1675;0;;"GDN"
+2025-10-01;12:30;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
