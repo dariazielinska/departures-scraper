@@ -17390,6 +17390,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-09-30;07:15;Dortmund;WIZZ AIR;W6 1661;0;;"GDN"
 2025-09-30;07:30;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
 2025-09-30;07:30;Baltimore-waszyngton;;CMB 574;0;;"GDN"
+2025-09-30;07:30;Baltimore-waszyngton;;CMB574;0;;"GDN"
 2025-09-30;08:30;Izmir;;ENT4107;0;;"GDN"
 2025-09-30;08:45;Alicante;RYANAIR;FR 1425;0;;"GDN"
 2025-09-30;08:45;Warszawa;LOT;LO3832;0;;"GDN"
@@ -17444,3 +17445,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-09-30;21:35;Warszawa;LOT;LO3826;0;;"GDN"
 2025-09-30;22:15;Kraków;RYANAIR;FR 236;0;;"GDN"
 2025-09-30;22:15;Goteborg;RYANAIR;FR 6095;0;;"GDN"
+2025-09-30;23:25;Manchester;;RK 4095;0;;"GDN"
+2025-09-30;23:35;Sztokholm arlanda;RYANAIR;FR 6099;0;;"GDN"
