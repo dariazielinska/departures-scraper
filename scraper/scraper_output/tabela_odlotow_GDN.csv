@@ -19088,6 +19088,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-18;14:20;Amsterdam;KLM;KL 1306;0;;"GDN"
 2025-10-18;14:20;Marsa alam;;U57843;0;;"GDN"
 2025-10-18;14:20;Antalia;;MGH880;0;;"GDN"
+2025-10-18;14:20;Antalia;;MGH 880;0;;"GDN"
 2025-10-18;14:25;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
 2025-10-18;14:30;Frankfurt;LUFTHANSA;LH 1379;0;;"GDN"
 2025-10-18;14:30;Antalia;;ENT4007;0;;"GDN"
@@ -19142,3 +19143,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-18;23:55;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
 2025-10-19;00:45;Antalia;;PC 6272;0;;"GDN"
 2025-10-19;00:45;Bodrum;;PC 6290;0;;"GDN"
+2025-10-19;02:45;Heraklion;;ENT7313;0;;"GDN"
