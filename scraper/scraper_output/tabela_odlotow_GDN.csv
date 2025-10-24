@@ -19712,6 +19712,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-25;10:30;Marsa alam;;ENT7547;0;;"GDN"
 2025-10-25;10:30;Bristol;RYANAIR;FR 8255;0;;"GDN"
 2025-10-25;10:55;Piza;RYANAIR;FR 4442;0;;"GDN"
+2025-10-25;11:00;Wilno;LOT;LO274;0;;"GDN"
 2025-10-25;11:05;Växjö-smaland;RYANAIR;FR 7271;0;;"GDN"
 2025-10-25;11:15;Marsa alam;;ENT4067;0;;"GDN"
 2025-10-25;11:15;Bergen;WIZZ AIR;W6 1745;0;;"GDN"
@@ -19732,3 +19733,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-25;14:45;Antalia;;ENT4007;0;;"GDN"
 2025-10-25;14:50;Warszawa;LOT;LO3838;0;;"GDN"
 2025-10-25;15:05;Praga;RYANAIR;FR 1920;0;;"GDN"
+2025-10-25;15:35;Oslo gardermoen;WIZZ AIR;W6 1783;0;;"GDN"
