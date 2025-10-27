@@ -19965,3 +19965,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-28;06:05;Madryt;WIZZ AIR;W6 1701;0;;"GDN"
 2025-10-28;06:10;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
 2025-10-28;06:15;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
+2025-10-28;06:30;Amsterdam;KLM;KL 1302;0;;"GDN"
+2025-10-28;06:30;Reykjavik keflavik;WIZZ AIR;W6 1773;0;;"GDN"
+2025-10-28;06:50;Leeds;RYANAIR;FR 1504;0;;"GDN"
