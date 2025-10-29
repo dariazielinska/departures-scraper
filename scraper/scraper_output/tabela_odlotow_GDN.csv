@@ -20125,4 +20125,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-30;13:30;Manchester;RYANAIR;FR 4095;0;;"GDN"
 2025-10-30;13:30;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
 2025-10-30;14:00;Amsterdam;KLM;KL 1306;0;;"GDN"
+2025-10-30;14:15;Frankfurt;LUFTHANSA;LH 1379;0;;"GDN"
+2025-10-30;14:30;Reykjavik keflavik;;FI 5831;0;;"GDN"
+2025-10-30;14:35;Oslo gardermoen;WIZZ AIR;W6 1783;0;;"GDN"
+2025-10-30;14:50;Warszawa;LOT;LO3838;0;;"GDN"
 2025-10-31;06:00;Monachium;LUFTHANSA;LH 1647;0;;"GDN"
