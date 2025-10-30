@@ -13159,3 +13159,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-30;08:15;Warszawa;LOT;LO 3888;0;;"KTW"
 2025-10-30;08:20;Dubrownik;RYANAIR;FR 6260;0;;"KTW"
 2025-10-30;09:05;Pafos;LOT;LO 6377;0;;"KTW"
+2025-10-30;10:10;Pafos;RYANAIR;FR 6393;0;;"KTW"
+2025-10-30;10:35;Dortmund;WIZZ AIR;W6 1093;0;;"KTW"
+2025-10-30;10:55;Eindhoven;WIZZ AIR;W6 1071;0;;"KTW"
