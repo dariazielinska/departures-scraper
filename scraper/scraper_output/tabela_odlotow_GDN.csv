@@ -20216,3 +20216,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-10-31;12:00;Dublin;RYANAIR;FR 7441;0;;"GDN"
 2025-10-31;12:55;Madera;WIZZ AIR;W6 1715;0;;"GDN"
 2025-10-31;13:00;Kopenhaga;;RC 9461;0;;"GDN"
+2025-10-31;13:10;Oslo gardermoen;Norwegian;DY 1053;0;;"GDN"
+2025-10-31;13:10;Oslo torp;RYANAIR;FR 3277;0;;"GDN"
+2025-10-31;13:30;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
+2025-10-31;13:40;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
+2025-10-31;14:00;Amsterdam;KLM;KL 1306;0;;"GDN"
