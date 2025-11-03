@@ -20459,6 +20459,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-03;13:10;Edynburg;RYANAIR;FR 6123;0;;"GDN"
 2025-11-03;13:30;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
 2025-11-03;13:40;Sharm el sheikh;;U57227;0;;"GDN"
+2025-11-03;13:40;Sharm el sheikh;;U5 7227;0;;"GDN"
 2025-11-03;14:00;Amsterdam;KLM;KL 1306;0;;"GDN"
 2025-11-03;14:05;Barcelona el prat;RYANAIR;FR 334;0;;"GDN"
 2025-11-03;14:05;Reykjavik keflavik;;RC 7463;0;;"GDN"
