@@ -20926,6 +20926,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-09;18:15;Leeds;RYANAIR;FR 1504;0;;"GDN"
 2025-11-09;18:15;Amsterdam;KLM;KL 1308;0;;"GDN"
 2025-11-09;18:20;Warszawa;LOT;LO3816;0;;"GDN"
+2025-11-09;18:45;Trondheim;;CAT9512;0;;"GDN"
 2025-11-09;18:55;Barcelona el prat;WIZZ AIR;W6 1705;0;;"GDN"
 2025-11-09;19:00;Rzym fiumicino;WIZZ AIR;W6 1699;0;;"GDN"
 2025-11-09;19:00;Bergen;WIZZ AIR;W6 1757;0;;"GDN"
@@ -20957,3 +20958,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-10;06:30;Oslo gardermoen;WIZZ AIR;W6 1785;0;;"GDN"
 2025-11-10;07:30;Dortmund;WIZZ AIR;W6 1661;0;;"GDN"
 2025-11-10;07:55;Kraków;RYANAIR;FR 236;0;;"GDN"
+2025-11-10;08:50;Warszawa;LOT;LO3832;0;;"GDN"
+2025-11-10;09:00;Mediolan bergamo;RYANAIR;FR 3279;0;;"GDN"
