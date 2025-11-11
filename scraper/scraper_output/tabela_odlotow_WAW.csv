@@ -59445,3 +59445,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-11;13:00;Lizbona (LIS);TAP Portugal;TP 1205;0;;"WAW"
 2025-11-11;13:00;Londyn-Heathrow (LHR);British Airways;BA 845;0;;"WAW"
 2025-11-11;13:05;Helsinki (HEL);Finnair;AY 1144;0;;"WAW"
+2025-11-11;13:05;Paryż (CDG);Air France;AF 1147;0;;"WAW"
+2025-11-11;13:10;Ostrawa (OSR);LOT;LO 501;0;;"WAW"
+2025-11-11;13:15;Gdańsk (GDN);LOT;LO 3837;0;;"WAW"
+2025-11-11;13:15;Poznań (POZ);LOT;LO 3943;0;;"WAW"
+2025-11-11;13:20;Punta Cana (PUJ);LOT;LO 6305;0;;"WAW"
