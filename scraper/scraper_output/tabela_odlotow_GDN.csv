@@ -21457,6 +21457,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-17;10:00;Leeds;RYANAIR;FR 1504;0;;"GDN"
 2025-11-17;10:05;Haugesund;WIZZ AIR;W6 1749;0;;"GDN"
 2025-11-17;10:20;Kopenhaga;SAS;SK 756;0;;"GDN"
+2025-11-17;10:25;Biggs army airfield;;5Y8241;0;;"GDN"
 2025-11-17;10:55;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
 2025-11-17;11:10;Budapeszt;WIZZ AIR;W6 1689;0;;"GDN"
 2025-11-17;11:20;Turku;WIZZ AIR;W6 1751;0;;"GDN"
@@ -21499,3 +21500,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-17;21:50;Dublin;RYANAIR;FR 1909;0;;"GDN"
 2025-11-17;22:00;Londyn stansted;RYANAIR;FR 544;0;;"GDN"
 2025-11-17;22:40;Newcastle;RYANAIR;FR 6103;0;;"GDN"
+2025-11-17;23:20;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
+2025-11-17;23:45;Goteborg;RYANAIR;FR 6095;0;;"GDN"
