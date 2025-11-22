@@ -21834,3 +21834,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-23;10:45;Praga;RYANAIR;FR 1920;0;;"GDN"
 2025-11-23;10:55;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
 2025-11-23;11:05;Hamburg;RYANAIR;FR 6119;0;;"GDN"
+2025-11-23;11:20;Turku;WIZZ AIR;W6 1751;0;;"GDN"
+2025-11-23;11:45;Amsterdam;KLM;KL 1304;0;;"GDN"
+2025-11-23;11:55;Warszawa;LOT;LO3836;0;;"GDN"
