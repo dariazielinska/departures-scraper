@@ -21840,3 +21840,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-23;12:05;Londyn stansted;RYANAIR;FR 544;0;;"GDN"
 2025-11-23;12:35;Mediolan malpensa;WIZZ AIR;W6 1713;0;;"GDN"
 2025-11-23;12:55;Kraków;RYANAIR;FR 236;0;;"GDN"
+2025-11-23;13:10;Belfast;;RK 9608;0;;"GDN"
+2025-11-23;13:30;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
+2025-11-23;14:00;Edynburg;RYANAIR;FR 6123;0;;"GDN"
+2025-11-23;14:00;Amsterdam;KLM;KL 1306;0;;"GDN"
