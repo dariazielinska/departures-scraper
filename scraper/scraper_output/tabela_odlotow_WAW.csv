@@ -62182,3 +62182,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-23;07:50;Teneryfa (TFS);LOT;LO 441;0;;"WAW"
 2025-11-23;08:00;Sztokholm (ARN);LOT;LO 453;0;;"WAW"
 2025-11-23;08:05;Malta (MLA);LOT;LO 671;0;;"WAW"
+2025-11-23;08:10;Budapeszt (BUD);Wizz Air;W6 2468;0;;"WAW"
+2025-11-23;08:15;Cancun (CUN);LOT;LO 6505;0;;"WAW"
+2025-11-23;08:30;Hurghada (HRG);Air Cairo;SM 3022;0;;"WAW"
