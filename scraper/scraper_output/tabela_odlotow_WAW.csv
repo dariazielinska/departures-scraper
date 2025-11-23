@@ -62277,3 +62277,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-23;15:50;Rzym (FCO);Wizz Air;W6 1443;0;;"WAW"
 2025-11-23;16:00;Lyon (LYS);LOT;LO 347;0;;"WAW"
 2025-11-23;16:00;Palma de Mallorca (PMI);Ryanair;FR 6145;0;;"WAW"
+2025-11-23;16:00;Praga (PRG);LOT;LO 521;0;;"WAW"
+2025-11-23;16:10;Rzym (FCO);LOT;LO 303;0;;"WAW"
+2025-11-23;16:15;Malta (MLA);Wizz Air;W6 1589;0;;"WAW"
+2025-11-23;16:15;Paryż (CDG);LOT;LO 335;0;;"WAW"
+2025-11-23;16:25;Nicea (NCE);LOT;LO 343;0;;"WAW"
