@@ -62403,3 +62403,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-24;07:15;Wiedeń (VIE);LOT;LO 223;0;;"WAW"
 2025-11-24;07:15;Wilno (VNO);LOT;LO 777;0;;"WAW"
 2025-11-24;07:20;Bruksela (BRU);LOT;LO 235;0;;"WAW"
+2025-11-24;07:20;Genewa (GVA);LOT;LO 417;0;;"WAW"
+2025-11-24;07:20;Paryż (CDG);LOT;LO 331;0;;"WAW"
+2025-11-24;07:25;Amsterdam (AMS);LOT;LO 265;0;;"WAW"
+2025-11-24;07:25;Mediolan (MXP);LOT;LO 317;0;;"WAW"
