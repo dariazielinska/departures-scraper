@@ -21959,3 +21959,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-11-24;19:25;Kopenhaga;SAS;SK 758;0;;"GDN"
 2025-11-24;19:25;Londyn luton;WIZZ AIR;W6 1607;0;;"GDN"
 2025-11-24;20:30;Rzym fiumicino;RYANAIR;FR 5873;0;;"GDN"
+2025-11-24;21:30;Warszawa;LOT;LO3826;0;;"GDN"
+2025-11-24;21:30;Bukareszt;;W4 3086;0;;"GDN"
+2025-11-24;21:50;Dublin;RYANAIR;FR 1909;0;;"GDN"
+2025-11-24;22:00;Londyn stansted;RYANAIR;FR 544;0;;"GDN"
