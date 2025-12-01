@@ -22406,6 +22406,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-12-01;19:25;Londyn luton;WIZZ AIR;W6 1607;0;;"GDN"
 2025-12-01;19:35;Birmingham;;LS1378;0;;"GDN"
 2025-12-01;20:30;Rzym fiumicino;RYANAIR;FR 5873;0;;"GDN"
+2025-12-01;21:05;Bydgoszcz;RYANAIR;FR2462;0;;"GDN"
 2025-12-01;21:30;Warszawa;LOT;LO3826;0;;"GDN"
 2025-12-01;21:30;Bukareszt;;W4 3086;0;;"GDN"
 2025-12-01;21:50;Dublin;RYANAIR;FR 1909;0;;"GDN"
@@ -22433,3 +22434,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-12-02;10:25;Londyn stansted;RYANAIR;FR 532;0;;"GDN"
 2025-12-02;11:45;Amsterdam;KLM;KL 1304;0;;"GDN"
 2025-12-02;11:55;Warszawa;LOT;LO3836;0;;"GDN"
+2025-12-02;12:30;Oslo torp;RYANAIR;FR 3277;0;;"GDN"
+2025-12-02;12:55;Teneryfa południe;WIZZ AIR;W6 1709;0;;"GDN"
