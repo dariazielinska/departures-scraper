@@ -22760,6 +22760,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-12-07;06:25;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
 2025-12-07;06:30;Amsterdam;KLM;KL 1302;0;;"GDN"
 2025-12-07;06:30;Reykjavik keflavik;WIZZ AIR;W6 1773;0;;"GDN"
+2025-12-07;06:30;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
+2025-12-07;06:30;Oslo gardermoen;WIZZ AIR;W6 1785;0;;"GDN"
 2025-12-07;07:25;Kopenhaga;RYANAIR;FR 6844;0;;"GDN"
 2025-12-07;07:30;Dortmund;WIZZ AIR;W6 1661;0;;"GDN"
 2025-12-07;07:45;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
