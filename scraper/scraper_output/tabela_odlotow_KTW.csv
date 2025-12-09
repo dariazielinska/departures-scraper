@@ -14786,3 +14786,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-12-09;08:15;Warszawa;LOT;LO 3888;0;;"KTW"
 2025-12-09;09:00;Frankfurt;LUFTHANSA;LH 1371;0;;"KTW"
 2025-12-09;10:25;Gran Canaria - Las Palmas;ENTER AIR;ENT 7023;0;;"KTW"
+2025-12-09;10:25;Cartagena;WORLD2FLY;WFL 7203;0;;"KTW"
+2025-12-09;10:35;Dortmund;WIZZ AIR;W6 1093;0;;"KTW"
+2025-12-09;10:55;Eindhoven;WIZZ AIR;W6 1071;0;;"KTW"
