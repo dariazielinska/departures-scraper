@@ -16802,3 +16802,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-12-11;17:25;Kutaisi (KUT);Wizz Air;W6 7942;0;;"POZ"
 2025-12-11;18:20;Warszawa (WAW);PLL LOT;LO 3948;0;;"POZ"
 2025-12-11;20:45;Hurghada (HRG);Air Cairo;SM 3026;0;;"POZ"
+2025-12-11;Godzina;{{ item.airport.label }} ({{ item.airport.value }});null;{{ item.flight_id }};0;;"POZ"
