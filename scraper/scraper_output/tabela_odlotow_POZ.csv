@@ -16837,6 +16837,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-12-12;09:20;Pafos (PFO);Ryanair;FR 637;0;;"POZ"
 2025-12-12;09:40;Alicante (ALC);Ryanair;FR 2544;0;;"POZ"
 2025-12-12;10:40;Frankfurt (FRA);Lufthansa;LH 1387;0;;"POZ"
+2025-12-12;11:00;Frankfurt (FRA);;KK 7251;0;;"POZ"
 2025-12-12;11:15;Bristol (BRS);Ryanair;FR 7948;0;;"POZ"
 2025-12-12;11:20;Londyn - Luton (LTN);Wizz Air;W9 5390;0;;"POZ"
 2025-12-12;12:00;Warszawa (WAW);PLL LOT;LO 3946;0;;"POZ"
