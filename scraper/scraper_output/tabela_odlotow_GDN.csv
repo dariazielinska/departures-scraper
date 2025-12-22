@@ -23907,3 +23907,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-12-23;06:00;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
 2025-12-23;06:05;Madryt;WIZZ AIR;W6 1701;0;;"GDN"
 2025-12-23;06:10;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
+2025-12-23;06:30;Amsterdam;KLM;KL 1302;0;;"GDN"
+2025-12-23;06:30;Haugesund;WIZZ AIR;W6 1749;0;;"GDN"
+2025-12-23;06:30;Reykjavik keflavik;WIZZ AIR;W6 1773;0;;"GDN"
+2025-12-23;06:40;Belfast;RYANAIR;FR 9608;0;;"GDN"
