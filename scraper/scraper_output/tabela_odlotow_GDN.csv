@@ -23885,6 +23885,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-12-22;18:50;Manchester;;LS860;0;;"GDN"
 2025-12-22;19:00;Rzym fiumicino;WIZZ AIR;W6 1699;0;;"GDN"
 2025-12-22;19:00;Bergen;WIZZ AIR;W6 1757;0;;"GDN"
+2025-12-22;19:05;Stavanger;WIZZ AIR;W6 1755;0;;"GDN"
 2025-12-22;19:25;Kopenhaga;SAS;SK 758;0;;"GDN"
 2025-12-22;19:25;Londyn luton;WIZZ AIR;W6 1607;0;;"GDN"
 2025-12-22;19:35;Birmingham;;LS1378;0;;"GDN"
@@ -23896,3 +23897,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2025-12-22;22:40;Newcastle;RYANAIR;FR 6103;0;;"GDN"
 2025-12-22;23:20;Sztokholm arlanda;RYANAIR;FR 4679;0;;"GDN"
 2025-12-22;23:45;Goteborg;RYANAIR;FR 6095;0;;"GDN"
+2025-12-23;01:05;Marsa alam;;ENT5027;0;;"GDN"
