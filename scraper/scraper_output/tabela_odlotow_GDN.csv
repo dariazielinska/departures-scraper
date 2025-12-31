@@ -24561,6 +24561,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-01;11:45;Amsterdam;KLM;KL 1304;0;;"GDN"
 2026-01-01;11:50;Kolombo;;ENT1477;0;;"GDN"
 2026-01-01;11:55;Warszawa;LOT;LO3836;0;;"GDN"
+2026-01-01;12:35;Malta;RYANAIR;FR 5208;0;;"GDN"
+2026-01-01;12:35;Mediolan malpensa;WIZZ AIR;W6 1713;0;;"GDN"
 2026-01-01;12:55;Madera;WIZZ AIR;W6 1715;0;;"GDN"
 2026-01-01;13:10;Oslo gardermoen;Norwegian;DY 1053;0;;"GDN"
 2026-01-01;13:25;Leeds;RYANAIR;FR 1504;0;;"GDN"
