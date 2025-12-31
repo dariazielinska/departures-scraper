@@ -24535,6 +24535,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-01;06:10;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
 2026-01-01;06:15;Barcelona el prat;RYANAIR;FR 334;0;;"GDN"
 2026-01-01;06:20;Hamburg;RYANAIR;FR 6119;0;;"GDN"
+2026-01-01;06:20;Belfast;RYANAIR;FR 9608;0;;"GDN"
 2026-01-01;06:30;Amsterdam;KLM;KL 1302;0;;"GDN"
 2026-01-01;06:30;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
 2026-01-01;06:30;Oslo gardermoen;WIZZ AIR;W6 1785;0;;"GDN"
