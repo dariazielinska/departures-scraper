@@ -24567,6 +24567,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-01;13:10;Oslo gardermoen;Norwegian;DY 1053;0;;"GDN"
 2026-01-01;13:25;Leeds;RYANAIR;FR 1504;0;;"GDN"
 2026-01-01;13:30;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
+2026-01-01;13:30;Manchester;RYANAIR;FR 4095;0;;"GDN"
 2026-01-01;14:00;Amsterdam;KLM;KL 1306;0;;"GDN"
 2026-01-01;14:15;Cork;RYANAIR;FR 1096;0;;"GDN"
 2026-01-01;14:25;Frankfurt;LUFTHANSA;LH 1379;0;;"GDN"
