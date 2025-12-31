@@ -71357,3 +71357,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-01;08:40;Mediolan (MXP);Wizz Air;W4 6388;0;;"WAW"
 2026-01-01;08:40;Wenecja (VCE);Wizz Air;W4 1345;0;;"WAW"
 2026-01-01;08:50;Helsinki (HEL);Finnair;AY 1142;0;;"WAW"
+2026-01-01;09:00;Doha (DOH);Qatar Airways;QR 264;0;;"WAW"
+2026-01-01;09:00;Wiedeń (VIE);Ryanair;FR 6065;0;;"WAW"
+2026-01-01;09:05;Stambuł (IST);LOT;LO 133;0;;"WAW"
+2026-01-01;09:10;Ateny (ATH);LOT;LO 601;0;;"WAW"
+2026-01-01;09:10;Marrakesz (RAK);LOT;LO 163;0;;"WAW"
