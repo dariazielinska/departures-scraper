@@ -24527,6 +24527,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-01;02:55;Hurghada;;ENT4037;0;;"GDN"
 2026-01-01;04:00;Londyn stansted;RYANAIR;FR1T;0;;"GDN"
 2026-01-01;05:30;Liverpool;WIZZ AIR;W6 1611;0;;"GDN"
+2026-01-01;05:30;Aberdeen;WIZZ AIR;W6 1617;0;;"GDN"
 2026-01-01;05:40;Warszawa;LOT;LO3828;0;;"GDN"
 2026-01-01;05:45;Trondheim;WIZZ AIR;W6 1761;0;;"GDN"
 2026-01-01;06:00;Bergen;WIZZ AIR;W6 1745;0;;"GDN"
