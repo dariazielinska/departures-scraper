@@ -24665,3 +24665,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-02;13:30;Monachium;LUFTHANSA;LH 1643;0;;"GDN"
 2026-01-02;13:40;Sztokholm arlanda;RYANAIR;FR 4617;0;;"GDN"
 2026-01-02;14:00;Amsterdam;KLM;KL 1306;0;;"GDN"
+2026-01-02;14:15;Frankfurt;LUFTHANSA;LH 1379;0;;"GDN"
+2026-01-02;14:35;Oslo gardermoen;WIZZ AIR;W6 1783;0;;"GDN"
+2026-01-02;14:40;Malaga;RYANAIR;FR 9918;0;;"GDN"
+2026-01-02;14:50;Warszawa;LOT;LO3838;0;;"GDN"
