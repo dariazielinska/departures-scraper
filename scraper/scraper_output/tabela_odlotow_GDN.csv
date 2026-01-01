@@ -24619,6 +24619,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-01;19:05;Mediolan bergamo;RYANAIR;FR 3282;0;;"GDN"
 2026-01-01;19:05;Stavanger;WIZZ AIR;W6 1755;0;;"GDN"
 2026-01-01;19:25;Londyn luton;WIZZ AIR;W6 1607;0;;"GDN"
+2026-01-01;19:25;Kopenhaga;SAS;SK 758;0;;"GDN"
 2026-01-01;20:25;Bristol;RYANAIR;FR 8255;0;;"GDN"
 2026-01-01;20:40;Edynburg;;RK 6123;0;;"GDN"
 2026-01-01;21:25;Edynburg;RYANAIR;FR 6123;0;;"GDN"
@@ -24626,3 +24627,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-01;21:55;Goteborg;RYANAIR;FR 9071;0;;"GDN"
 2026-01-01;22:10;Dublin;RYANAIR;FR 1909;0;;"GDN"
 2026-01-02;02:55;Hurghada;;ENT4037;0;;"GDN"
+2026-01-02;05:20;Dubaj;;ENT4819;0;;"GDN"
