@@ -15765,3 +15765,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-01;14:55;Warszawa;LOT;LO 3884;0;;"KTW"
 2026-01-01;15:00;Londyn - Stansted;RYANAIR;FR 8267;0;;"KTW"
 2026-01-01;15:20;Barcelona;WIZZ AIR;W6 1175;0;;"KTW"
+2026-01-01;16:00;Reykjavik - Keflavik;WIZZ AIR;W6 1167;0;;"KTW"
+2026-01-01;17:20;Katania;RYANAIR;FR 6373;0;;"KTW"
+2026-01-01;17:50;Hurghada;LOT;LO 6317;0;;"KTW"
+2026-01-01;17:55;Kolombo;ENTER AIR;ENT 7607;0;;"KTW"
