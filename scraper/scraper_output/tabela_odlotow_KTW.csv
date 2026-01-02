@@ -15804,6 +15804,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-02;12:00;Warszawa;LOT;LO 3882;0;;"KTW"
 2026-01-02;12:15;Gran Canaria - Las Palmas;ELECTRA AIRWAYS;AMQ 538;0;;"KTW"
 2026-01-02;12:35;Phuket;LOT;LO 6545;0;;"KTW"
+2026-01-02;12:35;Phuket;LOT;LOT 6545;0;;"KTW"
 2026-01-02;12:40;Bruksela;RYANAIR;FR 6264;0;;"KTW"
 2026-01-02;13:00;Mediolan - Bergamo;RYANAIR;FR 3409;0;;"KTW"
 2026-01-02;13:00;Teneryfa;WIZZ AIR;W6 1081;0;;"KTW"
@@ -15818,3 +15819,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-02;18:20;Londyn - Stansted;RYANAIR;FR 5535;0;;"KTW"
 2026-01-02;19:25;Rzym - Fiumicino;WIZZ AIR;W6 1045;0;;"KTW"
 2026-01-02;19:30;Londyn - Luton;WIZZ AIR;W6 1005;0;;"KTW"
+2026-01-02;19:50;Ateny;RYANAIR;FR 9542;0;;"KTW"
