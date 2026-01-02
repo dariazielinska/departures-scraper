@@ -24703,3 +24703,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-03;06:00;Sztokholm arlanda;WIZZ AIR;W6 1731;0;;"GDN"
 2026-01-03;06:05;Madryt;WIZZ AIR;W6 1701;0;;"GDN"
 2026-01-03;06:10;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
+2026-01-03;06:25;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
+2026-01-03;06:30;Amsterdam;KLM;KL 1302;0;;"GDN"
+2026-01-03;06:30;Budapeszt;WIZZ AIR;W6 1689;0;;"GDN"
+2026-01-03;06:30;Reykjavik keflavik;WIZZ AIR;W6 1773;0;;"GDN"
