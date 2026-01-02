@@ -17788,5 +17788,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-02;19:10;Paryż - Beauvais (BVA);Ryanair;FR 5050;0;;"POZ"
 2026-01-02;19:30;Londyn - Stansted (STN);Ryanair;FR 2337;0;;"POZ"
 2026-01-02;20:00;Manchester (MAN);Ryanair;FR 7547;0;;"POZ"
+2026-01-02;20:00;Manchester (MAN);Ryanair UK;RK 7547;0;;"POZ"
 2026-01-02;20:55;Birmingham (BHX);Ryanair;FR 5073;0;;"POZ"
 2026-01-02;21:15;Edynburg (EDI);Ryanair UK;RK 6715;0;;"POZ"
