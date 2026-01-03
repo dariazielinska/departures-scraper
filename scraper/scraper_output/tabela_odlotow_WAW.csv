@@ -72263,3 +72263,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-04;07:30;Zurych (ZRH);LOT;LO 411;0;;"WAW"
 2026-01-04;07:35;Dusseldorf (DUS);LOT;LO 403;0;;"WAW"
 2026-01-04;07:35;Londyn-Heathrow (LHR);LOT;LO 281;0;;"WAW"
+2026-01-04;07:40;Frankfurt (FRA);LOT;LO 381;0;;"WAW"
+2026-01-04;07:45;Budapeszt (BUD);LOT;LO 533;0;;"WAW"
+2026-01-04;07:45;Kopenhaga (CPH);LOT;LO 463;0;;"WAW"
+2026-01-04;07:50;Teneryfa (TFS);LOT;LO 441;0;;"WAW"
