@@ -72150,3 +72150,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-03;15:05;Tallinn (TLL);LOT;LO 787;0;;"WAW"
 2026-01-03;15:05;Tirana (TIA);LOT;LO 599;0;;"WAW"
 2026-01-03;15:10;Kluż-Napoka (CLJ);LOT;LO 653;0;;"WAW"
+2026-01-03;15:10;Rzeszów (RZE);LOT;LO 3807;0;;"WAW"
+2026-01-03;15:15;Ateny (ATH);SKY EXPRESS;GQ 771;0;;"WAW"
+2026-01-03;15:20;Ateny (ATH);LOT;LO 603;0;;"WAW"
