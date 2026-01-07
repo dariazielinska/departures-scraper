@@ -25072,6 +25072,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-08;10:05;Mediolan bergamo;RYANAIR;FR 3279;0;;"GDN"
 2026-01-08;10:20;Kopenhaga;SAS;SK 756;0;;"GDN"
 2026-01-08;10:25;Rzym ciampino;RYANAIR;FR 9922;0;;"GDN"
+2026-01-08;10:55;Poprad-tatry;WIZZ AIR;W6 1687;0;;"GDN"
+2026-01-08;10:55;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
 2026-01-08;11:10;Budapeszt;WIZZ AIR;W6 1689;0;;"GDN"
 2026-01-08;11:20;Turku;WIZZ AIR;W6 1751;0;;"GDN"
 2026-01-08;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
