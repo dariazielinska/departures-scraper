@@ -25126,3 +25126,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-09;06:05;Sztokholm arlanda;WIZZ AIR;W6 1731;0;;"GDN"
 2026-01-09;06:10;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
 2026-01-09;06:25;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
+2026-01-09;06:30;Amsterdam;KLM;KL 1302;0;;"GDN"
+2026-01-09;06:30;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
+2026-01-09;06:30;Oslo gardermoen;WIZZ AIR;W6 1785;0;;"GDN"
