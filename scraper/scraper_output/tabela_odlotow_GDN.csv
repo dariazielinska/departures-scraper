@@ -25319,6 +25319,7 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-11;22:05;Londyn stansted;RYANAIR;FR 592;0;;"GDN"
 2026-01-11;22:05;Manchester;RYANAIR;FR 4095;0;;"GDN"
 2026-01-11;22:20;Manchester;;RK 4095;0;;"GDN"
+2026-01-11;22:20;Manchester;RYANAIR;RK4095;0;;"GDN"
 2026-01-11;23:45;Goteborg;RYANAIR;FR 9071;0;;"GDN"
 2026-01-12;01:55;Marsa alam;;ENT4849;0;;"GDN"
 2026-01-12;05:30;Liverpool;WIZZ AIR;W6 1611;0;;"GDN"
@@ -25384,3 +25385,4 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-12;21:30;Warszawa;LOT;LO3826;0;;"GDN"
 2026-01-12;22:05;Manchester;RYANAIR;FR 4095;0;;"GDN"
 2026-01-12;22:30;Londyn stansted;RYANAIR;FR 592;0;;"GDN"
+2026-01-12;23:45;Goteborg;RYANAIR;FR 9071;0;;"GDN"
