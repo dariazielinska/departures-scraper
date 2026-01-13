@@ -25460,3 +25460,5 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-14;06:00;Kopenhaga;SAS;SK 1758;0;;"GDN"
 2026-01-14;06:05;Frankfurt;LUFTHANSA;LH 1383;0;;"GDN"
 2026-01-14;06:10;Londyn luton;WIZZ AIR;W6 1601;0;;"GDN"
+2026-01-14;06:30;Amsterdam;KLM;KL 1302;0;;"GDN"
+2026-01-14;06:30;Eindhoven;WIZZ AIR;W6 1641;0;;"GDN"
