@@ -75767,6 +75767,8 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-19;08:15;Cancun (CUN);LOT;LO 6505;0;;"WAW"
 2026-01-19;08:20;Rzym (FCO);LOT;LO 301;0;;"WAW"
 2026-01-19;08:30;Hurghada (HRG);Air Cairo;SM 3022;0;;"WAW"
+2026-01-19;08:30;Fuerteventura (FUE);Smartwings;3Z 7304;0;;"WAW"
+2026-01-19;08:30;Zanzibar (ZNZ);Enter Air;ENT7133;0;;"WAW"
 2026-01-19;08:40;Mediolan (MXP);Wizz Air;W4 6388;0;;"WAW"
 2026-01-19;08:40;Wenecja (VCE);Wizz Air;W4 1345;0;;"WAW"
 2026-01-19;08:45;Stambuł (IST);Turkish Airlines;TK 1262;0;;"WAW"
