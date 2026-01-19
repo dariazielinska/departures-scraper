@@ -25907,3 +25907,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-20;14:00;Amsterdam;KLM;KL 1306;0;;"GDN"
 2026-01-20;14:45;Kopenhaga;RYANAIR;FR 6844;0;;"GDN"
 2026-01-20;14:50;Warszawa;LOT;LO3838;0;;"GDN"
+2026-01-20;15:25;Alicante;WIZZ AIR;W6 1707;0;;"GDN"
+2026-01-20;15:40;Kopenhaga;SAS;SK 760;0;;"GDN"
+2026-01-20;15:55;Larnaka;WIZZ AIR;W6 1791;0;;"GDN"
