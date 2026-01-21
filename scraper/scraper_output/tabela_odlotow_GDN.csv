@@ -25995,3 +25995,6 @@ Data;Czas;Kierunek;Przewoznik;Rejs;Status;;Lotnisko wylotowe
 2026-01-22;10:55;Kopenhaga;WIZZ AIR;W6 1741;0;;"GDN"
 2026-01-22;11:10;Billund;WIZZ AIR;W6 1777;0;;"GDN"
 2026-01-22;11:20;Turku;WIZZ AIR;W6 1751;0;;"GDN"
+2026-01-22;11:50;Kolombo;;ENT1477;0;;"GDN"
+2026-01-22;11:50;Amsterdam;KLM;KL 1304;0;;"GDN"
+2026-01-22;11:55;Warszawa;LOT;LO3836;0;;"GDN"
