@@ -405,7 +405,7 @@ const scrapeData = async (url) => {
     });
     const page = await browser.newPage();
 
-    if(selectedScraper.name === "POZ" || selectedScraper.name === "WAW") {
+    if(selectedScraper.name === "POZ" || selectedScraper.name === "WAW" || selectedScraper.name === "BZG") {
         await page.setViewport({
             width: 375,
             height: 667,
