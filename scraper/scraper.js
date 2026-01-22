@@ -429,9 +429,12 @@ const scrapeData = async (url) => {
     //await page.screenshot({ path: 'lotnisko_screenshot.png' });
 
     if (selectedScraper.name === "BZG") {
+        await page.screenshot({ path: "debug_bzg_1_after_goto.png", fullPage: true });
         await page.evaluate(() => {
             document.querySelector('[aria-label="Akceptuj wszystko"]').click();
         });
+        await new Promise(r => setTimeout(r, 2000));
+        await page.screenshot({ path: "debug_bzg_2_after_cookies.png", fullPage: true });
     } else if (selectedScraper.name === "RZE") {
         await page.evaluate(() => {
             document.querySelector('#cookies a b').click();
