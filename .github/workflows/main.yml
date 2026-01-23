@@ -1,37 +1,37 @@
-name: Run Scraper
+# name: Run Scraper
 
-on:
-  schedule:
-    - cron: '*/15 * * * *'
-  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: '*/15 * * * *'
+#   workflow_dispatch:
 
-permissions:
-  contents: write
+# permissions:
+#   contents: write
 
-jobs:
-  scrape:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+# jobs:
+#   scrape:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repo
+#         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: 18
 
-      - name: Install dependencies
-        run: cd scraper && npm install
+#       - name: Install dependencies
+#         run: cd scraper && npm install
 
-      - name: Run Puppeteer script
-        run: cd scraper && node scraper.js
+#       - name: Run Puppeteer script
+#         run: cd scraper && node scraper.js
 
-      - name: Commit and push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add .
-          git commit -m "Automated data update [$(date)]" || echo "No changes to commit"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+#       - name: Commit and push changes
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         run: |
+#           git config --global user.name "github-actions"
+#           git config --global user.email "github-actions@github.com"
+#           git add .
+#           git commit -m "Automated data update [$(date)]" || echo "No changes to commit"
+#           git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
